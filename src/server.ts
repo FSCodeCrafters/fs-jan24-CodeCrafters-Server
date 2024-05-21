@@ -8,7 +8,7 @@ const server = express();
 
 server.use(cors({ origin: '*' }));
 
-server.get('/', (req, res) => {
+server.get('*', (req, res) => {
   res.send('Hello, World!');
 });
 
