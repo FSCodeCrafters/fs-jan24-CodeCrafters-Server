@@ -21,9 +21,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# vercel
-.vercel
-
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
