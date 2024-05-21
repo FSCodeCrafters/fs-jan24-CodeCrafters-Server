@@ -1,16 +1,14 @@
 {
   "name": "fs-jan24-codecrafters-server",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.ts",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "format": "prettier . --ignore-path .gitignore --write",
     "lint": "eslint . --fix",
     "fix-style": "npm run format && npm run lint",
     "prepare": "husky install"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@eslint/eslintrc": "3.1.0",
     "@eslint/js": "9.3.0",
