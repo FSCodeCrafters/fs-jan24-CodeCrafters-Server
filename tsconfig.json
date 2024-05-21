@@ -10,5 +10,6 @@
     "strict": true,
     "skipLibCheck": true
   },
-  "include": ["src", "eslint.config.mjs", "prisma"]
+  "include": ["src/**/*.ts", "eslint.config.mjs", "prisma"],
+  "exclude": ["node_modules"]
 }
