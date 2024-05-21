@@ -9,8 +9,7 @@
     "prepare": "husky install",
     "dev": "nodemon src/server.ts",
     "start": "ts-node src/server.ts",
-    "seed": "ts-node prisma/seed.ts",
-    "vercel-build": "echo hello"
+    "seed": "ts-node prisma/seed.ts"
   },
   "author": "codeCrafters",
   "license": "ISC",
