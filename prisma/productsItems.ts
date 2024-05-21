@@ -9049,4 +9049,4 @@ export const productItems = [
     zoom: 'Digital zoom up to 5x',
     cell: ['Not applicable']
   }
-]
+];

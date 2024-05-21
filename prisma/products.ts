@@ -2521,4 +2521,4 @@ export const products = [
     year: 2022,
     image: 'img/phones/apple-iphone-14-pro/gold/00.webp'
   }
-]
+];
