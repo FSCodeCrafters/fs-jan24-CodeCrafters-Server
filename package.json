@@ -2,12 +2,14 @@
   "name": "fs-jan24-codecrafters-server",
   "version": "1.0.0",
   "main": "src/index.ts",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "format": "prettier . --ignore-path .gitignore --write",
     "lint": "eslint . --fix",
     "fix-style": "npm run format && npm run lint",
     "prepare": "husky install",
-    "build": "tsc",
     "dev": "nodemon src/server.ts",
     "start": "ts-node src/server.ts",
     "seed": "ts-node prisma/seed.ts"
