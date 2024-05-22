@@ -12,7 +12,8 @@
     "prepare": "husky install",
     "dev": "nodemon src/server.ts",
     "start": "ts-node src/server.ts",
-    "seed": "ts-node prisma/seed.ts"
+    "seed": "ts-node prisma/seed.ts",
+    "postinstall": "prisma generate"
   },
   "author": "codeCrafters",
   "license": "ISC",
