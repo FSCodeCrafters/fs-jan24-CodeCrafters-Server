@@ -1,22 +1,27 @@
-import globals from 'globals'
-import path from 'path'
-import { fileURLToPath } from 'url'
-import { FlatCompat } from '@eslint/eslintrc'
-import pluginJs from '@eslint/js'
+import globals from 'globals';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { FlatCompat } from '@eslint/eslintrc';
+import pluginJs from '@eslint/js';
 
 // mimic CommonJS variables -- not needed if using CommonJS
-const filename = fileURLToPath(import.meta.url)
-const dirname = path.dirname(filename)
+const filename = fileURLToPath(import.meta.url);
+const dirname = path.dirname(filename);
 const compat = new FlatCompat({
   baseDirectory: dirname,
   recommendedConfig: pluginJs.configs.recommended
-})
+});
 
 export default [
   { languageOptions: { globals: globals.node } },
   ...compat.extends('standard-with-typescript'),
   ...compat.extends('plugin:@typescript-eslint/recommended'),
   {
+    rules: {
+      semi: 'off',
+      '@typescript-eslint/semi': ['error', 'always'],
+      'semi-style': ['error', 'last']
+    },
     ignores: ['node_modules/', 'dist/', '.git/', '.eslintignore']
   }
-]
+];
