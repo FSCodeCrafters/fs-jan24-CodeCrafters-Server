@@ -8,3 +8,4 @@ router.get('/', catchError(productController.get));
 router.get('/:id/recommended', catchError(productController.getRecommended));
 router.get('/new', catchError(productController.getNewestProducts));
 router.get('/discount', catchError(productController.getTopDiscountProducts));
+router.get('/:id', catchError(productController.getOne));
