@@ -14,3 +14,5 @@ server.use('/products', express.json(), productRouter);
 server.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
+
+export default server;
