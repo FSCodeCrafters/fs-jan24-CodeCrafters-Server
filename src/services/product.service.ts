@@ -24,7 +24,7 @@ export const getRecommended = async (id: number): Promise<Product[]> => {
         not: id
       }
     },
-    take: 20,
+    take: 20
   });
 };
 
