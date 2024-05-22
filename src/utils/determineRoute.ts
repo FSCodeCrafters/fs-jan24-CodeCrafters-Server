@@ -1,4 +1,4 @@
-import { Request, Response, NextFunction } from 'express';
+import { type Request, type Response, type NextFunction } from 'express';
 
 export const determineRoute = (type: string) => {
   return (req: Request, res: Response, next: NextFunction) => {

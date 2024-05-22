@@ -10,8 +10,8 @@ export const getAll = async (): Promise<Product[]> => {
 export const getOne = async (id: string): Promise<ProductItem | null> => {
   return await db.productItem.findUnique({
     where: {
-      id
-    }
+      id,
+    },
   });
 };
 
@@ -19,13 +19,13 @@ export const getByCategory = async (category: string): Promise<Product[]> => {
   return await db.product.findMany({
     where: {
       category,
-    }
+    },
   });
 };
 
 export const getRecommended = async (id: number): Promise<Product[]> => {
   const product = await db.product.findUnique({
-    where: { id }
+    where: { id },
   });
 
   if (product === null) {
@@ -38,19 +38,19 @@ export const getRecommended = async (id: number): Promise<Product[]> => {
     where: {
       category,
       id: {
-        not: id
-      }
+        not: id,
+      },
     },
-    take: 20
+    take: 20,
   });
 };
 
 export const getNewestProducts = async (): Promise<Product[]> => {
   return await db.product.findMany({
     where: {
-      year: 2022
+      year: 2022,
     },
-    take: 20
+    take: 20,
   });
 };
 
@@ -61,4 +61,3 @@ export const getTopDiscountProducts = async (): Promise<Product[]> => {
 
   return products.slice(0, 20);
 };
-

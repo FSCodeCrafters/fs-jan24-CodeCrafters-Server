@@ -22,11 +22,14 @@ export const getOne = async (req: Request, res: Response): Promise<void> => {
   res.send(productItem);
 };
 
-export const getByCategory = async (req: Request, res: Response): Promise<void> => {
+export const getByCategory = async (
+  req: Request,
+  res: Response,
+): Promise<void> => {
   const { route: category } = req.params;
   const products: Product[] = await productService.getByCategory(category);
 
-  if (!products.length) {
+  if (products.length === 0) {
     res.sendStatus(CODE_STATUSES.NOT_FOUND);
 
     return;
@@ -37,7 +40,7 @@ export const getByCategory = async (req: Request, res: Response): Promise<void> 
 
 export const getRecommended = async (
   req: Request,
-  res: Response
+  res: Response,
 ): Promise<void> => {
   try {
     const { route: id } = req.params;
@@ -56,7 +59,7 @@ export const getRecommended = async (
 
 export const getNewestProducts = async (
   req: Request,
-  res: Response
+  res: Response,
 ): Promise<void> => {
   const products: Product[] = await productService.getNewestProducts();
   res.send(products);
@@ -64,7 +67,7 @@ export const getNewestProducts = async (
 
 export const getTopDiscountProducts = async (
   req: Request,
-  res: Response
+  res: Response,
 ): Promise<void> => {
   const products: Product[] = await productService.getTopDiscountProducts();
   res.send(products);
