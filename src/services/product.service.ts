@@ -7,7 +7,6 @@ export const getAll = async (): Promise<Product[]> => {
   return await db.product.findMany();
 };
 
-
 export const getRecommended = async (id: number): Promise<Product[]> => {
   const product = await db.product.findUnique({
     where: { id }
