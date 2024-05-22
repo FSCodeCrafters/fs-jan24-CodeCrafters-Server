@@ -10,7 +10,7 @@ export const products = [
     color: 'black',
     ram: '2GB',
     year: 2016,
-    image: 'img/phones/apple-iphone-7/black/00.webp',
+    image: 'img/phones/apple-iphone-7/black/00.webp'
   },
   {
     category: 'phones',
@@ -23,7 +23,7 @@ export const products = [
     color: 'black',
     ram: '3GB',
     year: 2016,
-    image: 'img/phones/apple-iphone-7-plus/black/00.webp',
+    image: 'img/phones/apple-iphone-7-plus/black/00.webp'
   },
   {
     category: 'phones',
@@ -36,7 +36,7 @@ export const products = [
     color: 'gold',
     ram: '2GB',
     year: 2017,
-    image: 'img/phones/apple-iphone-8/gold/00.webp',
+    image: 'img/phones/apple-iphone-8/gold/00.webp'
   },
   {
     category: 'phones',
@@ -49,7 +49,7 @@ export const products = [
     color: 'black',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/black/00.webp',
+    image: 'img/phones/apple-iphone-11/black/00.webp'
   },
   {
     category: 'phones',
@@ -62,7 +62,7 @@ export const products = [
     color: 'yellow',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/yellow/00.webp',
+    image: 'img/phones/apple-iphone-11/yellow/00.webp'
   },
   {
     category: 'phones',
@@ -75,7 +75,7 @@ export const products = [
     color: 'green',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/green/00.webp',
+    image: 'img/phones/apple-iphone-11/green/00.webp'
   },
   {
     category: 'phones',
@@ -88,7 +88,7 @@ export const products = [
     color: 'gold',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro/gold/00.webp',
+    image: 'img/phones/apple-iphone-11-pro/gold/00.webp'
   },
   {
     category: 'phones',
@@ -101,7 +101,7 @@ export const products = [
     color: 'midnightgreen',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro/midnightgreen/00.webp',
+    image: 'img/phones/apple-iphone-11-pro/midnightgreen/00.webp'
   },
   {
     category: 'phones',
@@ -114,7 +114,7 @@ export const products = [
     color: 'silver',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro/silver/00.webp',
+    image: 'img/phones/apple-iphone-11-pro/silver/00.webp'
   },
   {
     category: 'phones',
@@ -127,7 +127,7 @@ export const products = [
     color: 'spacegray',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro-max/spacegray/00.webp',
+    image: 'img/phones/apple-iphone-11-pro-max/spacegray/00.webp'
   },
   {
     category: 'phones',
@@ -140,7 +140,7 @@ export const products = [
     color: 'gold',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro-max/gold/00.webp',
+    image: 'img/phones/apple-iphone-11-pro-max/gold/00.webp'
   },
   {
     category: 'phones',
@@ -153,7 +153,7 @@ export const products = [
     color: 'spacegray',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro-max/spacegray/00.webp',
+    image: 'img/phones/apple-iphone-11-pro-max/spacegray/00.webp'
   },
   {
     category: 'phones',
@@ -166,7 +166,7 @@ export const products = [
     color: 'red',
     ram: '3GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xr/red/00.webp',
+    image: 'img/phones/apple-iphone-xr/red/00.webp'
   },
   {
     category: 'phones',
@@ -179,7 +179,7 @@ export const products = [
     color: 'white',
     ram: '3GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xr/white/00.webp',
+    image: 'img/phones/apple-iphone-xr/white/00.webp'
   },
   {
     category: 'phones',
@@ -192,7 +192,7 @@ export const products = [
     color: 'spacegray',
     ram: '4GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xs/spacegray/00.webp',
+    image: 'img/phones/apple-iphone-xs/spacegray/00.webp'
   },
   {
     category: 'phones',
@@ -205,7 +205,7 @@ export const products = [
     color: 'gold',
     ram: '4GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xs-max/gold/00.webp',
+    image: 'img/phones/apple-iphone-xs-max/gold/00.webp'
   },
   {
     category: 'phones',
@@ -218,7 +218,7 @@ export const products = [
     color: 'silver',
     ram: '4GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xs-max/silver/00.webp',
+    image: 'img/phones/apple-iphone-xs-max/silver/00.webp'
   },
   {
     category: 'phones',
@@ -231,7 +231,7 @@ export const products = [
     color: 'gold',
     ram: '2GB',
     year: 2016,
-    image: 'img/phones/apple-iphone-7/gold/00.webp',
+    image: 'img/phones/apple-iphone-7/gold/00.webp'
   },
   {
     category: 'phones',
@@ -244,7 +244,7 @@ export const products = [
     color: 'silver',
     ram: '3GB',
     year: 2016,
-    image: 'img/phones/apple-iphone-7-plus/silver/00.webp',
+    image: 'img/phones/apple-iphone-7-plus/silver/00.webp'
   },
   {
     category: 'phones',
@@ -257,7 +257,7 @@ export const products = [
     color: 'spacegray',
     ram: '2GB',
     year: 2017,
-    image: 'img/phones/apple-iphone-8/spacegray/00.webp',
+    image: 'img/phones/apple-iphone-8/spacegray/00.webp'
   },
   {
     category: 'phones',
@@ -270,7 +270,7 @@ export const products = [
     color: 'green',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/green/00.webp',
+    image: 'img/phones/apple-iphone-11/green/00.webp'
   },
   {
     category: 'phones',
@@ -283,7 +283,7 @@ export const products = [
     color: 'purple',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/purple/00.webp',
+    image: 'img/phones/apple-iphone-11/purple/00.webp'
   },
   {
     category: 'phones',
@@ -296,7 +296,7 @@ export const products = [
     color: 'yellow',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/yellow/00.webp',
+    image: 'img/phones/apple-iphone-11/yellow/00.webp'
   },
   {
     category: 'phones',
@@ -309,7 +309,7 @@ export const products = [
     color: 'gold',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro/gold/00.webp',
+    image: 'img/phones/apple-iphone-11-pro/gold/00.webp'
   },
   {
     category: 'phones',
@@ -322,7 +322,7 @@ export const products = [
     color: 'spacegray',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro/spacegray/00.webp',
+    image: 'img/phones/apple-iphone-11-pro/spacegray/00.webp'
   },
   {
     category: 'phones',
@@ -335,7 +335,7 @@ export const products = [
     color: 'silver',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro-max/silver/00.webp',
+    image: 'img/phones/apple-iphone-11-pro-max/silver/00.webp'
   },
   {
     category: 'phones',
@@ -348,7 +348,7 @@ export const products = [
     color: 'midnightgreen',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro-max/midnightgreen/00.webp',
+    image: 'img/phones/apple-iphone-11-pro-max/midnightgreen/00.webp'
   },
   {
     category: 'phones',
@@ -361,7 +361,7 @@ export const products = [
     color: 'silver',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro-max/silver/00.webp',
+    image: 'img/phones/apple-iphone-11-pro-max/silver/00.webp'
   },
   {
     category: 'phones',
@@ -374,7 +374,7 @@ export const products = [
     color: 'white',
     ram: '3GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xr/white/00.webp',
+    image: 'img/phones/apple-iphone-xr/white/00.webp'
   },
   {
     category: 'phones',
@@ -387,7 +387,7 @@ export const products = [
     color: 'coral',
     ram: '3GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xr/coral/00.webp',
+    image: 'img/phones/apple-iphone-xr/coral/00.webp'
   },
   {
     category: 'phones',
@@ -400,7 +400,7 @@ export const products = [
     color: 'gold',
     ram: '4GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xs/gold/00.webp',
+    image: 'img/phones/apple-iphone-xs/gold/00.webp'
   },
   {
     category: 'phones',
@@ -413,7 +413,7 @@ export const products = [
     color: 'spacegray',
     ram: '4GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xs/spacegray/00.webp',
+    image: 'img/phones/apple-iphone-xs/spacegray/00.webp'
   },
   {
     category: 'phones',
@@ -426,7 +426,7 @@ export const products = [
     color: 'silver',
     ram: '4GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xs-max/silver/00.webp',
+    image: 'img/phones/apple-iphone-xs-max/silver/00.webp'
   },
   {
     category: 'phones',
@@ -439,7 +439,7 @@ export const products = [
     color: 'gold',
     ram: '4GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xs-max/gold/00.webp',
+    image: 'img/phones/apple-iphone-xs-max/gold/00.webp'
   },
   {
     category: 'phones',
@@ -452,7 +452,7 @@ export const products = [
     color: 'rosegold',
     ram: '2GB',
     year: 2016,
-    image: 'img/phones/apple-iphone-7/rosegold/00.webp',
+    image: 'img/phones/apple-iphone-7/rosegold/00.webp'
   },
   {
     category: 'phones',
@@ -465,7 +465,7 @@ export const products = [
     color: 'purple',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/purple/00.webp',
+    image: 'img/phones/apple-iphone-11/purple/00.webp'
   },
   {
     category: 'phones',
@@ -478,7 +478,7 @@ export const products = [
     color: 'red',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/red/00.webp',
+    image: 'img/phones/apple-iphone-11/red/00.webp'
   },
   {
     category: 'phones',
@@ -491,7 +491,7 @@ export const products = [
     color: 'black',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/black/00.webp',
+    image: 'img/phones/apple-iphone-11/black/00.webp'
   },
   {
     category: 'phones',
@@ -504,7 +504,7 @@ export const products = [
     color: 'red',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/red/00.webp',
+    image: 'img/phones/apple-iphone-11/red/00.webp'
   },
   {
     category: 'phones',
@@ -517,7 +517,7 @@ export const products = [
     color: 'midnightgreen',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro/midnightgreen/00.webp',
+    image: 'img/phones/apple-iphone-11-pro/midnightgreen/00.webp'
   },
   {
     category: 'phones',
@@ -530,7 +530,7 @@ export const products = [
     color: 'silver',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro/silver/00.webp',
+    image: 'img/phones/apple-iphone-11-pro/silver/00.webp'
   },
   {
     category: 'phones',
@@ -543,7 +543,7 @@ export const products = [
     color: 'gold',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro/gold/00.webp',
+    image: 'img/phones/apple-iphone-11-pro/gold/00.webp'
   },
   {
     category: 'phones',
@@ -556,7 +556,7 @@ export const products = [
     color: 'midnightgreen',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro-max/midnightgreen/00.webp',
+    image: 'img/phones/apple-iphone-11-pro-max/midnightgreen/00.webp'
   },
   {
     category: 'phones',
@@ -569,7 +569,7 @@ export const products = [
     color: 'spacegray',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro-max/spacegray/00.webp',
+    image: 'img/phones/apple-iphone-11-pro-max/spacegray/00.webp'
   },
   {
     category: 'phones',
@@ -582,7 +582,7 @@ export const products = [
     color: 'coral',
     ram: '3GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xr/coral/00.webp',
+    image: 'img/phones/apple-iphone-xr/coral/00.webp'
   },
   {
     category: 'phones',
@@ -595,7 +595,7 @@ export const products = [
     color: 'red',
     ram: '3GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xr/red/00.webp',
+    image: 'img/phones/apple-iphone-xr/red/00.webp'
   },
   {
     category: 'phones',
@@ -608,7 +608,7 @@ export const products = [
     color: 'gold',
     ram: '4GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xs/gold/00.webp',
+    image: 'img/phones/apple-iphone-xs/gold/00.webp'
   },
   {
     category: 'phones',
@@ -621,7 +621,7 @@ export const products = [
     color: 'spacegray',
     ram: '4GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xs-max/spacegray/00.webp',
+    image: 'img/phones/apple-iphone-xs-max/spacegray/00.webp'
   },
   {
     category: 'phones',
@@ -634,7 +634,7 @@ export const products = [
     color: 'rosegold',
     ram: '3GB',
     year: 2016,
-    image: 'img/phones/apple-iphone-7-plus/rosegold/00.webp',
+    image: 'img/phones/apple-iphone-7-plus/rosegold/00.webp'
   },
   {
     category: 'phones',
@@ -647,7 +647,7 @@ export const products = [
     color: 'white',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/white/00.webp',
+    image: 'img/phones/apple-iphone-11/white/00.webp'
   },
   {
     category: 'phones',
@@ -660,7 +660,7 @@ export const products = [
     color: 'green',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/green/00.webp',
+    image: 'img/phones/apple-iphone-11/green/00.webp'
   },
   {
     category: 'phones',
@@ -673,7 +673,7 @@ export const products = [
     color: 'white',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/white/00.webp',
+    image: 'img/phones/apple-iphone-11/white/00.webp'
   },
   {
     category: 'phones',
@@ -686,7 +686,7 @@ export const products = [
     color: 'black',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/black/00.webp',
+    image: 'img/phones/apple-iphone-11/black/00.webp'
   },
   {
     category: 'phones',
@@ -699,7 +699,7 @@ export const products = [
     color: 'white',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/white/00.webp',
+    image: 'img/phones/apple-iphone-11/white/00.webp'
   },
   {
     category: 'phones',
@@ -712,7 +712,7 @@ export const products = [
     color: 'spacegray',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro/spacegray/00.webp',
+    image: 'img/phones/apple-iphone-11-pro/spacegray/00.webp'
   },
   {
     category: 'phones',
@@ -725,7 +725,7 @@ export const products = [
     color: 'midnightgreen',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro/midnightgreen/00.webp',
+    image: 'img/phones/apple-iphone-11-pro/midnightgreen/00.webp'
   },
   {
     category: 'phones',
@@ -738,7 +738,7 @@ export const products = [
     color: 'gold',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro-max/gold/00.webp',
+    image: 'img/phones/apple-iphone-11-pro-max/gold/00.webp'
   },
   {
     category: 'phones',
@@ -751,7 +751,7 @@ export const products = [
     color: 'silver',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro-max/silver/00.webp',
+    image: 'img/phones/apple-iphone-11-pro-max/silver/00.webp'
   },
   {
     category: 'phones',
@@ -764,7 +764,7 @@ export const products = [
     color: 'midnightgreen',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro-max/midnightgreen/00.webp',
+    image: 'img/phones/apple-iphone-11-pro-max/midnightgreen/00.webp'
   },
   {
     category: 'phones',
@@ -777,7 +777,7 @@ export const products = [
     color: 'yellow',
     ram: '3GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xr/yellow/00.webp',
+    image: 'img/phones/apple-iphone-xr/yellow/00.webp'
   },
   {
     category: 'phones',
@@ -790,7 +790,7 @@ export const products = [
     color: 'silver',
     ram: '2GB',
     year: 2016,
-    image: 'img/phones/apple-iphone-7/silver/00.webp',
+    image: 'img/phones/apple-iphone-7/silver/00.webp'
   },
   {
     category: 'phones',
@@ -803,7 +803,7 @@ export const products = [
     color: 'purple',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/purple/00.webp',
+    image: 'img/phones/apple-iphone-11/purple/00.webp'
   },
   {
     category: 'phones',
@@ -816,7 +816,7 @@ export const products = [
     color: 'gold',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro-max/gold/00.webp',
+    image: 'img/phones/apple-iphone-11-pro-max/gold/00.webp'
   },
   {
     category: 'phones',
@@ -829,7 +829,7 @@ export const products = [
     color: 'yellow',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/yellow/00.webp',
+    image: 'img/phones/apple-iphone-11/yellow/00.webp'
   },
   {
     category: 'phones',
@@ -842,7 +842,7 @@ export const products = [
     color: 'spacegray',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro/spacegray/00.webp',
+    image: 'img/phones/apple-iphone-11-pro/spacegray/00.webp'
   },
   {
     category: 'phones',
@@ -855,7 +855,7 @@ export const products = [
     color: 'silver',
     ram: '2GB',
     year: 2017,
-    image: 'img/phones/apple-iphone-8/silver/00.webp',
+    image: 'img/phones/apple-iphone-8/silver/00.webp'
   },
   {
     category: 'phones',
@@ -868,7 +868,7 @@ export const products = [
     color: 'red',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11/red/00.webp',
+    image: 'img/phones/apple-iphone-11/red/00.webp'
   },
   {
     category: 'phones',
@@ -881,7 +881,7 @@ export const products = [
     color: 'spacegray',
     ram: '4GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xs-max/spacegray/00.webp',
+    image: 'img/phones/apple-iphone-xs-max/spacegray/00.webp'
   },
   {
     category: 'phones',
@@ -894,7 +894,7 @@ export const products = [
     color: 'gold',
     ram: '3GB',
     year: 2016,
-    image: 'img/phones/apple-iphone-7-plus/gold/00.webp',
+    image: 'img/phones/apple-iphone-7-plus/gold/00.webp'
   },
   {
     category: 'phones',
@@ -907,7 +907,7 @@ export const products = [
     color: 'silver',
     ram: '4GB',
     year: 2019,
-    image: 'img/phones/apple-iphone-11-pro/silver/00.webp',
+    image: 'img/phones/apple-iphone-11-pro/silver/00.webp'
   },
   {
     category: 'phones',
@@ -920,7 +920,7 @@ export const products = [
     color: 'yellow',
     ram: '3GB',
     year: 2018,
-    image: 'img/phones/apple-iphone-xr/yellow/00.webp',
+    image: 'img/phones/apple-iphone-xr/yellow/00.webp'
   },
   {
     category: 'phones',
@@ -933,7 +933,7 @@ export const products = [
     color: 'midnight',
     ram: '6GB',
     year: 2022,
-    image: 'img/phones/apple-iphone-14/midnight/00.webp',
+    image: 'img/phones/apple-iphone-14/midnight/00.webp'
   },
   {
     category: 'phones',
@@ -946,7 +946,7 @@ export const products = [
     color: 'midnight',
     ram: '6GB',
     year: 2022,
-    image: 'img/phones/apple-iphone-14/midnight/00.webp',
+    image: 'img/phones/apple-iphone-14/midnight/00.webp'
   },
   {
     category: 'phones',
@@ -959,7 +959,7 @@ export const products = [
     color: 'midnight',
     ram: '6GB',
     year: 2022,
-    image: 'img/phones/apple-iphone-14/midnight/00.webp',
+    image: 'img/phones/apple-iphone-14/midnight/00.webp'
   },
   {
     category: 'phones',
@@ -972,7 +972,7 @@ export const products = [
     color: 'yellow',
     ram: '6GB',
     year: 2022,
-    image: 'img/phones/apple-iphone-14/yellow/00.webp',
+    image: 'img/phones/apple-iphone-14/yellow/00.webp'
   },
   {
     category: 'phones',
@@ -985,7 +985,7 @@ export const products = [
     color: 'yellow',
     ram: '6GB',
     year: 2022,
-    image: 'img/phones/apple-iphone-14/yellow/00.webp',
+    image: 'img/phones/apple-iphone-14/yellow/00.webp'
   },
   {
     category: 'phones',
@@ -998,7 +998,7 @@ export const products = [
     color: 'yellow',
     ram: '6GB',
     year: 2022,
-    image: 'img/phones/apple-iphone-14/yellow/00.webp',
+    image: 'img/phones/apple-iphone-14/yellow/00.webp'
   },
   {
     category: 'phones',
@@ -1011,7 +1011,7 @@ export const products = [
     color: 'purple',
     ram: '6GB',
     year: 2022,
-    image: 'img/phones/apple-iphone-14/purple/00.webp',
+    image: 'img/phones/apple-iphone-14/purple/00.webp'
   },
   {
     category: 'phones',
@@ -1024,7 +1024,7 @@ export const products = [
     color: 'purple',
     ram: '6GB',
     year: 2022,
-    image: 'img/phones/apple-iphone-14/purple/00.webp',
+    image: 'img/phones/apple-iphone-14/purple/00.webp'
   },
   {
     category: 'phones',
@@ -1037,7 +1037,7 @@ export const products = [
     color: 'purple',
     ram: '6GB',
     year: 2022,
-    image: 'img/phones/apple-iphone-14/purple/00.webp',
+    image: 'img/phones/apple-iphone-14/purple/00.webp'
   },
   {
     category: 'phones',
@@ -1050,7 +1050,7 @@ export const products = [
     color: 'spaceblack',
     ram: '6GB',
     year: 2022,
-    image: 'img/phones/apple-iphone-14-pro/spaceblack/00.webp',
+    image: 'img/phones/apple-iphone-14-pro/spaceblack/00.webp'
   },
   {
     category: 'phones',
@@ -1063,7 +1063,7 @@ export const products = [
     color: 'spaceblack',
     ram: '6GB',
     year: 2022,
-    image: 'img/phones/apple-iphone-14-pro/spaceblack/00.webp',
+    image: 'img/phones/apple-iphone-14-pro/spaceblack/00.webp'
   },
   {
     category: 'phones',
@@ -1076,7 +1076,7 @@ export const products = [
     color: 'spaceblack',
     ram: '6GB',
     year: 2022,
-    image: 'img/phones/apple-iphone-14-pro/spaceblack/00.webp',
+    image: 'img/phones/apple-iphone-14-pro/spaceblack/00.webp'
   },
   {
     category: 'phones',
@@ -1089,7 +1089,7 @@ export const products = [
     color: 'spaceblack',
     ram: '6GB',
     year: 2022,
-    image: 'img/phones/apple-iphone-14-pro/spaceblack/00.webp',
+    image: 'img/phones/apple-iphone-14-pro/spaceblack/00.webp'
   },
   {
     category: 'phones',
@@ -1102,7 +1102,7 @@ export const products = [
     color: 'purple',
     ram: '4GB',
     year: 2020,
-    image: 'img/phones/apple-iphone-12/purple/00.webp',
+    image: 'img/phones/apple-iphone-12/purple/00.webp'
   },
   {
     category: 'phones',
@@ -1115,7 +1115,7 @@ export const products = [
     color: 'purple',
     ram: '4GB',
     year: 2020,
-    image: 'img/phones/apple-iphone-12/purple/00.webp',
+    image: 'img/phones/apple-iphone-12/purple/00.webp'
   },
   {
     category: 'phones',
@@ -1128,7 +1128,7 @@ export const products = [
     color: 'purple',
     ram: '4GB',
     year: 2020,
-    image: 'img/phones/apple-iphone-12/purple/00.webp',
+    image: 'img/phones/apple-iphone-12/purple/00.webp'
   },
   {
     category: 'phones',
@@ -1141,7 +1141,7 @@ export const products = [
     color: 'white',
     ram: '4GB',
     year: 2020,
-    image: 'img/phones/apple-iphone-12/white/00.webp',
+    image: 'img/phones/apple-iphone-12/white/00.webp'
   },
   {
     category: 'phones',
@@ -1154,7 +1154,7 @@ export const products = [
     color: 'white',
     ram: '4GB',
     year: 2020,
-    image: 'img/phones/apple-iphone-12/white/00.webp',
+    image: 'img/phones/apple-iphone-12/white/00.webp'
   },
   {
     category: 'phones',
@@ -1167,7 +1167,7 @@ export const products = [
     color: 'white',
     ram: '4GB',
     year: 2020,
-    image: 'img/phones/apple-iphone-12/white/00.webp',
+    image: 'img/phones/apple-iphone-12/white/00.webp'
   },
   {
     category: 'phones',
@@ -1180,7 +1180,7 @@ export const products = [
     color: 'red',
     ram: '4GB',
     year: 2020,
-    image: 'img/phones/apple-iphone-12/red/00.webp',
+    image: 'img/phones/apple-iphone-12/red/00.webp'
   },
   {
     category: 'phones',
@@ -1193,7 +1193,7 @@ export const products = [
     color: 'red',
     ram: '4GB',
     year: 2020,
-    image: 'img/phones/apple-iphone-12/red/00.webp',
+    image: 'img/phones/apple-iphone-12/red/00.webp'
   },
   {
     category: 'phones',
@@ -1206,7 +1206,7 @@ export const products = [
     color: 'red',
     ram: '4GB',
     year: 2020,
-    image: 'img/phones/apple-iphone-12/red/00.webp',
+    image: 'img/phones/apple-iphone-12/red/00.webp'
   },
   {
     category: 'phones',
@@ -1219,7 +1219,7 @@ export const products = [
     color: 'black',
     ram: '4GB',
     year: 2020,
-    image: 'img/phones/apple-iphone-12/black/00.webp',
+    image: 'img/phones/apple-iphone-12/black/00.webp'
   },
   {
     category: 'phones',
@@ -1232,7 +1232,7 @@ export const products = [
     color: 'black',
     ram: '4GB',
     year: 2020,
-    image: 'img/phones/apple-iphone-12/black/00.webp',
+    image: 'img/phones/apple-iphone-12/black/00.webp'
   },
   {
     category: 'phones',
@@ -1245,7 +1245,7 @@ export const products = [
     color: 'black',
     ram: '4GB',
     year: 2020,
-    image: 'img/phones/apple-iphone-12/black/00.webp',
+    image: 'img/phones/apple-iphone-12/black/00.webp'
   },
   {
     category: 'phones',
@@ -1258,7 +1258,7 @@ export const products = [
     color: 'blue',
     ram: '4GB',
     year: 2020,
-    image: 'img/phones/apple-iphone-13-mini/blue/00.webp',
+    image: 'img/phones/apple-iphone-13-mini/blue/00.webp'
   },
   {
     category: 'phones',
@@ -1271,7 +1271,7 @@ export const products = [
     color: 'blue',
     ram: '4GB',
     year: 2020,
-    image: 'img/phones/apple-iphone-13-mini/blue/00.webp',
+    image: 'img/phones/apple-iphone-13-mini/blue/00.webp'
   },
   {
     category: 'phones',
@@ -1284,7 +1284,7 @@ export const products = [
     color: 'blue',
     ram: '4GB',
     year: 2020,
-    image: 'img/phones/apple-iphone-13-mini/blue/00.webp',
+    image: 'img/phones/apple-iphone-13-mini/blue/00.webp'
   },
   {
     category: 'phones',
@@ -1297,7 +1297,7 @@ export const products = [
     color: 'white',
     ram: '4GB',
     year: 2020,
-    image: 'img/phones/apple-iphone-13-mini/white/00.webp',
+    image: 'img/phones/apple-iphone-13-mini/white/00.webp'
   },
   {
     category: 'phones',
@@ -1310,7 +1310,7 @@ export const products = [
     color: 'white',
     ram: '4GB',
     year: 2020,
-    image: 'img/phones/apple-iphone-13-mini/white/00.webp',
+    image: 'img/phones/apple-iphone-13-mini/white/00.webp'
   },
   {
     category: 'phones',
@@ -1323,7 +1323,7 @@ export const products = [
     color: 'white',
     ram: '4GB',
     year: 2020,
-    image: 'img/phones/apple-iphone-13-mini/white/00.webp',
+    image: 'img/phones/apple-iphone-13-mini/white/00.webp'
   },
   {
     category: 'phones',
@@ -1336,7 +1336,7 @@ export const products = [
     color: 'pink',
     ram: '4GB',
     year: 2020,
-    image: 'img/phones/apple-iphone-13-mini/pink/00.webp',
+    image: 'img/phones/apple-iphone-13-mini/pink/00.webp'
   },
   {
     category: 'phones',
@@ -1349,7 +1349,7 @@ export const products = [
     color: 'pink',
     ram: '4GB',
     year: 2020,
-    image: 'img/phones/apple-iphone-13-mini/pink/00.webp',
+    image: 'img/phones/apple-iphone-13-mini/pink/00.webp'
   },
   {
     category: 'phones',
@@ -1362,7 +1362,7 @@ export const products = [
     color: 'pink',
     ram: '4GB',
     year: 2020,
-    image: 'img/phones/apple-iphone-13-mini/pink/00.webp',
+    image: 'img/phones/apple-iphone-13-mini/pink/00.webp'
   },
   {
     category: 'phones',
@@ -1375,7 +1375,7 @@ export const products = [
     color: 'midnight',
     ram: '4GB',
     year: 2020,
-    image: 'img/phones/apple-iphone-13-mini/midnight/00.webp',
+    image: 'img/phones/apple-iphone-13-mini/midnight/00.webp'
   },
   {
     category: 'phones',
@@ -1388,7 +1388,7 @@ export const products = [
     color: 'midnight',
     ram: '4GB',
     year: 2020,
-    image: 'img/phones/apple-iphone-13-mini/midnight/00.webp',
+    image: 'img/phones/apple-iphone-13-mini/midnight/00.webp'
   },
   {
     category: 'phones',
@@ -1401,7 +1401,7 @@ export const products = [
     color: 'midnight',
     ram: '4GB',
     year: 2020,
-    image: 'img/phones/apple-iphone-13-mini/midnight/00.webp',
+    image: 'img/phones/apple-iphone-13-mini/midnight/00.webp'
   },
   {
     category: 'phones',
@@ -1414,7 +1414,7 @@ export const products = [
     color: 'sierrablue',
     ram: '6GB',
     year: 2022,
-    image: 'img/phones/apple-iphone-13-pro-max/sierrablue/00.webp',
+    image: 'img/phones/apple-iphone-13-pro-max/sierrablue/00.webp'
   },
   {
     category: 'phones',
@@ -1427,7 +1427,7 @@ export const products = [
     color: 'sierrablue',
     ram: '6GB',
     year: 2022,
-    image: 'img/phones/apple-iphone-13-pro-max/sierrablue/00.webp',
+    image: 'img/phones/apple-iphone-13-pro-max/sierrablue/00.webp'
   },
   {
     category: 'phones',
@@ -1440,7 +1440,7 @@ export const products = [
     color: 'sierrablue',
     ram: '6GB',
     year: 2022,
-    image: 'img/phones/apple-iphone-13-pro-max/sierrablue/00.webp',
+    image: 'img/phones/apple-iphone-13-pro-max/sierrablue/00.webp'
   },
   {
     category: 'phones',
@@ -1453,7 +1453,7 @@ export const products = [
     color: 'sierrablue',
     ram: '6GB',
     year: 2022,
-    image: 'img/phones/apple-iphone-13-pro-max/sierrablue/00.webp',
+    image: 'img/phones/apple-iphone-13-pro-max/sierrablue/00.webp'
   },
   {
     category: 'phones',
@@ -1466,7 +1466,7 @@ export const products = [
     color: 'gold',
     ram: '6GB',
     year: 2022,
-    image: 'img/phones/apple-iphone-13-pro-max/gold/00.webp',
+    image: 'img/phones/apple-iphone-13-pro-max/gold/00.webp'
   },
   {
     category: 'phones',
@@ -1479,7 +1479,7 @@ export const products = [
     color: 'gold',
     ram: '6GB',
     year: 2022,
-    image: 'img/phones/apple-iphone-13-pro-max/gold/00.webp',
+    image: 'img/phones/apple-iphone-13-pro-max/gold/00.webp'
   },
   {
     category: 'phones',
@@ -1492,7 +1492,7 @@ export const products = [
     color: 'gold',
     ram: '6GB',
     year: 2022,
-    image: 'img/phones/apple-iphone-13-pro-max/gold/00.webp',
+    image: 'img/phones/apple-iphone-13-pro-max/gold/00.webp'
   },
   {
     category: 'phones',
@@ -1505,7 +1505,7 @@ export const products = [
     color: 'gold',
     ram: '6GB',
     year: 2022,
-    image: 'img/phones/apple-iphone-13-pro-max/gold/00.webp',
+    image: 'img/phones/apple-iphone-13-pro-max/gold/00.webp'
   },
   {
     category: 'phones',
@@ -1518,7 +1518,7 @@ export const products = [
     color: 'graphite',
     ram: '6GB',
     year: 2022,
-    image: 'img/phones/apple-iphone-13-pro-max/graphite/00.webp',
+    image: 'img/phones/apple-iphone-13-pro-max/graphite/00.webp'
   },
   {
     category: 'phones',
@@ -1531,7 +1531,7 @@ export const products = [
     color: 'graphite',
     ram: '6GB',
     year: 2022,
-    image: 'img/phones/apple-iphone-13-pro-max/graphite/00.webp',
+    image: 'img/phones/apple-iphone-13-pro-max/graphite/00.webp'
   },
   {
     category: 'phones',
@@ -1544,7 +1544,7 @@ export const products = [
     color: 'graphite',
     ram: '6GB',
     year: 2022,
-    image: 'img/phones/apple-iphone-13-pro-max/graphite/00.webp',
+    image: 'img/phones/apple-iphone-13-pro-max/graphite/00.webp'
   },
   {
     category: 'phones',
@@ -1557,7 +1557,7 @@ export const products = [
     color: 'graphite',
     ram: '6GB',
     year: 2022,
-    image: 'img/phones/apple-iphone-13-pro-max/graphite/00.webp',
+    image: 'img/phones/apple-iphone-13-pro-max/graphite/00.webp'
   },
   {
     category: 'accessories',
@@ -1570,7 +1570,7 @@ export const products = [
     color: 'space gray',
     ram: '768MB',
     year: 2017,
-    image: 'img/accessories/apple-watch-series-3/space-gray/00.webp',
+    image: 'img/accessories/apple-watch-series-3/space-gray/00.webp'
   },
   {
     category: 'accessories',
@@ -1583,7 +1583,7 @@ export const products = [
     color: 'space gray',
     ram: '768MB',
     year: 2017,
-    image: 'img/accessories/apple-watch-series-3/space-gray/00.webp',
+    image: 'img/accessories/apple-watch-series-3/space-gray/00.webp'
   },
   {
     category: 'accessories',
@@ -1596,7 +1596,7 @@ export const products = [
     color: 'gold',
     ram: '768MB',
     year: 2017,
-    image: 'img/accessories/apple-watch-series-3/gold/00.webp',
+    image: 'img/accessories/apple-watch-series-3/gold/00.webp'
   },
   {
     category: 'accessories',
@@ -1609,7 +1609,7 @@ export const products = [
     color: 'gold',
     ram: '768MB',
     year: 2017,
-    image: 'img/accessories/apple-watch-series-3/gold/00.webp',
+    image: 'img/accessories/apple-watch-series-3/gold/00.webp'
   },
   {
     category: 'accessories',
@@ -1622,7 +1622,7 @@ export const products = [
     color: 'silver',
     ram: '768MB',
     year: 2017,
-    image: 'img/accessories/apple-watch-series-3/silver/00.webp',
+    image: 'img/accessories/apple-watch-series-3/silver/00.webp'
   },
   {
     category: 'accessories',
@@ -1635,7 +1635,7 @@ export const products = [
     color: 'silver',
     ram: '768MB',
     year: 2017,
-    image: 'img/accessories/apple-watch-series-3/silver/00.webp',
+    image: 'img/accessories/apple-watch-series-3/silver/00.webp'
   },
   {
     category: 'accessories',
@@ -1648,7 +1648,7 @@ export const products = [
     color: 'space gray',
     ram: '1GB',
     year: 2020,
-    image: 'img/accessories/apple-watch-series-6/space-gray/00.webp',
+    image: 'img/accessories/apple-watch-series-6/space-gray/00.webp'
   },
   {
     category: 'accessories',
@@ -1661,7 +1661,7 @@ export const products = [
     color: 'space gray',
     ram: '1GB',
     year: 2020,
-    image: 'img/accessories/apple-watch-series-6/space-gray/00.webp',
+    image: 'img/accessories/apple-watch-series-6/space-gray/00.webp'
   },
   {
     category: 'accessories',
@@ -1674,7 +1674,7 @@ export const products = [
     color: 'silver',
     ram: '1GB',
     year: 2020,
-    image: 'img/accessories/apple-watch-series-6/silver/00.webp',
+    image: 'img/accessories/apple-watch-series-6/silver/00.webp'
   },
   {
     category: 'accessories',
@@ -1687,7 +1687,7 @@ export const products = [
     color: 'silver',
     ram: '1GB',
     year: 2020,
-    image: 'img/accessories/apple-watch-series-6/silver/00.webp',
+    image: 'img/accessories/apple-watch-series-6/silver/00.webp'
   },
   {
     category: 'accessories',
@@ -1700,7 +1700,7 @@ export const products = [
     color: 'gold',
     ram: '1GB',
     year: 2020,
-    image: 'img/accessories/apple-watch-series-6/gold/00.webp',
+    image: 'img/accessories/apple-watch-series-6/gold/00.webp'
   },
   {
     category: 'accessories',
@@ -1713,7 +1713,7 @@ export const products = [
     color: 'gold',
     ram: '1GB',
     year: 2020,
-    image: 'img/accessories/apple-watch-series-6/gold/00.webp',
+    image: 'img/accessories/apple-watch-series-6/gold/00.webp'
   },
   {
     category: 'accessories',
@@ -1726,7 +1726,7 @@ export const products = [
     color: 'blue',
     ram: '1GB',
     year: 2020,
-    image: 'img/accessories/apple-watch-series-6/blue/00.webp',
+    image: 'img/accessories/apple-watch-series-6/blue/00.webp'
   },
   {
     category: 'accessories',
@@ -1739,7 +1739,7 @@ export const products = [
     color: 'blue',
     ram: '1GB',
     year: 2020,
-    image: 'img/accessories/apple-watch-series-6/blue/00.webp',
+    image: 'img/accessories/apple-watch-series-6/blue/00.webp'
   },
   {
     category: 'accessories',
@@ -1752,7 +1752,7 @@ export const products = [
     color: 'red',
     ram: '1GB',
     year: 2020,
-    image: 'img/accessories/apple-watch-series-6/red/00.webp',
+    image: 'img/accessories/apple-watch-series-6/red/00.webp'
   },
   {
     category: 'accessories',
@@ -1765,7 +1765,7 @@ export const products = [
     color: 'red',
     ram: '1GB',
     year: 2020,
-    image: 'img/accessories/apple-watch-series-6/red/00.webp',
+    image: 'img/accessories/apple-watch-series-6/red/00.webp'
   },
   {
     category: 'accessories',
@@ -1778,7 +1778,7 @@ export const products = [
     color: 'silver',
     ram: '1GB',
     year: 2019,
-    image: 'img/accessories/apple-watch-series-5/silver/00.webp',
+    image: 'img/accessories/apple-watch-series-5/silver/00.webp'
   },
   {
     category: 'accessories',
@@ -1791,7 +1791,7 @@ export const products = [
     color: 'silver',
     ram: '1GB',
     year: 2019,
-    image: 'img/accessories/apple-watch-series-5/silver/00.webp',
+    image: 'img/accessories/apple-watch-series-5/silver/00.webp'
   },
   {
     category: 'accessories',
@@ -1804,7 +1804,7 @@ export const products = [
     color: 'gold',
     ram: '1GB',
     year: 2019,
-    image: 'img/accessories/apple-watch-series-5/gold/00.webp',
+    image: 'img/accessories/apple-watch-series-5/gold/00.webp'
   },
   {
     category: 'accessories',
@@ -1817,7 +1817,7 @@ export const products = [
     color: 'gold',
     ram: '1GB',
     year: 2019,
-    image: 'img/accessories/apple-watch-series-5/gold/00.webp',
+    image: 'img/accessories/apple-watch-series-5/gold/00.webp'
   },
   {
     category: 'accessories',
@@ -1830,7 +1830,7 @@ export const products = [
     color: 'space-gray',
     ram: '1GB',
     year: 2019,
-    image: 'img/accessories/apple-watch-series-5/space-gray/00.webp',
+    image: 'img/accessories/apple-watch-series-5/space-gray/00.webp'
   },
   {
     category: 'accessories',
@@ -1843,7 +1843,7 @@ export const products = [
     color: 'space-gray',
     ram: '1GB',
     year: 2019,
-    image: 'img/accessories/apple-watch-series-5/space-gray/00.webp',
+    image: 'img/accessories/apple-watch-series-5/space-gray/00.webp'
   },
   {
     category: 'accessories',
@@ -1856,7 +1856,7 @@ export const products = [
     color: 'silver',
     ram: '0.75GB',
     year: 2019,
-    image: 'img/accessories/apple-watch-series-4/silver/00.webp',
+    image: 'img/accessories/apple-watch-series-4/silver/00.webp'
   },
   {
     category: 'accessories',
@@ -1869,7 +1869,7 @@ export const products = [
     color: 'silver',
     ram: '0.75GB',
     year: 2019,
-    image: 'img/accessories/apple-watch-series-4/silver/00.webp',
+    image: 'img/accessories/apple-watch-series-4/silver/00.webp'
   },
   {
     category: 'accessories',
@@ -1882,7 +1882,7 @@ export const products = [
     color: 'gold',
     ram: '0.75GB',
     year: 2019,
-    image: 'img/accessories/apple-watch-series-4/gold/00.webp',
+    image: 'img/accessories/apple-watch-series-4/gold/00.webp'
   },
   {
     category: 'accessories',
@@ -1895,7 +1895,7 @@ export const products = [
     color: 'gold',
     ram: '0.75GB',
     year: 2019,
-    image: 'img/accessories/apple-watch-series-4/gold/00.webp',
+    image: 'img/accessories/apple-watch-series-4/gold/00.webp'
   },
   {
     category: 'accessories',
@@ -1908,7 +1908,7 @@ export const products = [
     color: 'space-gray',
     ram: '0.75GB',
     year: 2019,
-    image: 'img/accessories/apple-watch-series-4/space-gray/00.webp',
+    image: 'img/accessories/apple-watch-series-4/space-gray/00.webp'
   },
   {
     category: 'accessories',
@@ -1921,7 +1921,7 @@ export const products = [
     color: 'space-gray',
     ram: '0.75GB',
     year: 2019,
-    image: 'img/accessories/apple-watch-series-4/space-gray/00.webp',
+    image: 'img/accessories/apple-watch-series-4/space-gray/00.webp'
   },
   {
     category: 'accessories',
@@ -1934,7 +1934,7 @@ export const products = [
     color: 'silver',
     ram: '1GB',
     year: 2020,
-    image: 'img/accessories/apple-watch-se/silver/00.webp',
+    image: 'img/accessories/apple-watch-se/silver/00.webp'
   },
   {
     category: 'accessories',
@@ -1947,7 +1947,7 @@ export const products = [
     color: 'silver',
     ram: '1GB',
     year: 2020,
-    image: 'img/accessories/apple-watch-se/silver/00.webp',
+    image: 'img/accessories/apple-watch-se/silver/00.webp'
   },
   {
     category: 'accessories',
@@ -1960,7 +1960,7 @@ export const products = [
     color: 'gold',
     ram: '1GB',
     year: 2020,
-    image: 'img/accessories/apple-watch-se/gold/00.webp',
+    image: 'img/accessories/apple-watch-se/gold/00.webp'
   },
   {
     category: 'accessories',
@@ -1973,7 +1973,7 @@ export const products = [
     color: 'gold',
     ram: '1GB',
     year: 2020,
-    image: 'img/accessories/apple-watch-se/gold/00.webp',
+    image: 'img/accessories/apple-watch-se/gold/00.webp'
   },
   {
     category: 'accessories',
@@ -1986,7 +1986,7 @@ export const products = [
     color: 'space gray',
     ram: '1GB',
     year: 2020,
-    image: 'img/accessories/apple-watch-se/space-gray/00.webp',
+    image: 'img/accessories/apple-watch-se/space-gray/00.webp'
   },
   {
     category: 'accessories',
@@ -1999,7 +1999,7 @@ export const products = [
     color: 'space gray',
     ram: '1GB',
     year: 2020,
-    image: 'img/accessories/apple-watch-se/space-gray/00.webp',
+    image: 'img/accessories/apple-watch-se/space-gray/00.webp'
   },
   {
     category: 'tablets',
@@ -2012,7 +2012,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-pro-11-2021/spacegray/00.webp',
     screen: "11' Liquid Retina",
     ram: '8GB',
-    year: 2021,
+    year: 2021
   },
   {
     category: 'tablets',
@@ -2025,7 +2025,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-pro-11-2021/silver/00.webp',
     screen: "11' Liquid Retina",
     ram: '8GB',
-    year: 2021,
+    year: 2021
   },
   {
     category: 'tablets',
@@ -2038,7 +2038,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-pro-11-2021/spacegray/00.webp',
     screen: "11' Liquid Retina",
     ram: '8GB',
-    year: 2021,
+    year: 2021
   },
   {
     category: 'tablets',
@@ -2051,7 +2051,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-pro-11-2021/silver/00.webp',
     screen: "11' Liquid Retina",
     ram: '8GB',
-    year: 2021,
+    year: 2021
   },
   {
     category: 'tablets',
@@ -2064,7 +2064,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-pro-11-2021/spacegray/00.webp',
     screen: "11' Liquid Retina",
     ram: '8GB',
-    year: 2021,
+    year: 2021
   },
   {
     category: 'tablets',
@@ -2077,7 +2077,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-pro-11-2021/silver/00.webp',
     screen: "11' Liquid Retina",
     ram: '8GB',
-    year: 2021,
+    year: 2021
   },
   {
     category: 'tablets',
@@ -2090,7 +2090,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-pro-11-2021/spacegray/00.webp',
     screen: "11' Liquid Retina",
     ram: '8GB',
-    year: 2021,
+    year: 2021
   },
   {
     category: 'tablets',
@@ -2103,7 +2103,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-pro-11-2021/silver/00.webp',
     screen: "11' Liquid Retina",
     ram: '8GB',
-    year: 2021,
+    year: 2021
   },
   {
     category: 'tablets',
@@ -2116,7 +2116,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-pro-11-2021/spacegray/00.webp',
     screen: "11' Liquid Retina",
     ram: '8GB',
-    year: 2021,
+    year: 2021
   },
   {
     category: 'tablets',
@@ -2129,7 +2129,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-pro-11-2021/silver/00.webp',
     screen: "11' Liquid Retina",
     ram: '8GB',
-    year: 2021,
+    year: 2021
   },
   {
     category: 'tablets',
@@ -2142,7 +2142,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-air-4th-gen/rose-gold/00.webp',
     screen: "10.9' Liquid Retina",
     ram: '4GB',
-    year: 2020,
+    year: 2020
   },
   {
     category: 'tablets',
@@ -2155,7 +2155,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-air-4th-gen/rose-gold/00.webp',
     screen: "10.9' Liquid Retina",
     ram: '4GB',
-    year: 2020,
+    year: 2020
   },
   {
     category: 'tablets',
@@ -2168,7 +2168,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-air-4th-gen/silver/00.webp',
     screen: "10.9' Liquid Retina",
     ram: '4GB',
-    year: 2020,
+    year: 2020
   },
   {
     category: 'tablets',
@@ -2181,7 +2181,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-air-4th-gen/silver/00.webp',
     screen: "10.9' Liquid Retina",
     ram: '4GB',
-    year: 2020,
+    year: 2020
   },
   {
     category: 'tablets',
@@ -2194,7 +2194,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-air-4th-gen/green/00.webp',
     screen: "10.9' Liquid Retina",
     ram: '4GB',
-    year: 2020,
+    year: 2020
   },
   {
     category: 'tablets',
@@ -2207,7 +2207,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-air-4th-gen/green/00.webp',
     screen: "10.9' Liquid Retina",
     ram: '4GB',
-    year: 2020,
+    year: 2020
   },
   {
     category: 'tablets',
@@ -2220,7 +2220,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-air-4th-gen/sky-blue/00.webp',
     screen: "10.9' Liquid Retina",
     ram: '4GB',
-    year: 2020,
+    year: 2020
   },
   {
     category: 'tablets',
@@ -2233,7 +2233,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-air-4th-gen/sky-blue/00.webp',
     screen: "10.9' Liquid Retina",
     ram: '4GB',
-    year: 2020,
+    year: 2020
   },
   {
     category: 'tablets',
@@ -2246,7 +2246,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-mini-6th-gen/spacegray/00.webp',
     screen: "8.3' Liquid Retina",
     ram: '4GB',
-    year: 2021,
+    year: 2021
   },
   {
     category: 'tablets',
@@ -2259,7 +2259,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-mini-6th-gen/spacegray/00.webp',
     screen: "8.3' Liquid Retina",
     ram: '4GB',
-    year: 2021,
+    year: 2021
   },
   {
     category: 'tablets',
@@ -2272,7 +2272,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-mini-6th-gen/starlight/00.webp',
     screen: "8.3' Liquid Retina",
     ram: '4GB',
-    year: 2021,
+    year: 2021
   },
   {
     category: 'tablets',
@@ -2285,7 +2285,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-mini-6th-gen/starlight/00.webp',
     screen: "8.3' Liquid Retina",
     ram: '4GB',
-    year: 2021,
+    year: 2021
   },
   {
     category: 'tablets',
@@ -2298,7 +2298,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-mini-6th-gen/pink/00.webp',
     screen: "8.3' Liquid Retina",
     ram: '4GB',
-    year: 2021,
+    year: 2021
   },
   {
     category: 'tablets',
@@ -2311,7 +2311,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-mini-6th-gen/pink/00.webp',
     screen: "8.3' Liquid Retina",
     ram: '4GB',
-    year: 2021,
+    year: 2021
   },
   {
     category: 'tablets',
@@ -2324,7 +2324,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-10-2-2020/gold/00.webp',
     screen: "10.2' Retina",
     ram: '3GB',
-    year: 2020,
+    year: 2020
   },
   {
     category: 'tablets',
@@ -2337,7 +2337,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-10-2-2020/gold/00.webp',
     screen: "10.2' Retina",
     ram: '3GB',
-    year: 2020,
+    year: 2020
   },
   {
     category: 'tablets',
@@ -2350,7 +2350,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-10-2-2020/silver/00.webp',
     screen: "10.2' Retina",
     ram: '3GB',
-    year: 2020,
+    year: 2020
   },
   {
     category: 'tablets',
@@ -2363,7 +2363,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-10-2-2020/silver/00.webp',
     screen: "10.2' Retina",
     ram: '3GB',
-    year: 2020,
+    year: 2020
   },
   {
     category: 'tablets',
@@ -2376,7 +2376,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-10-2-2020/spacegray/00.webp',
     screen: "10.2' Retina",
     ram: '3GB',
-    year: 2020,
+    year: 2020
   },
   {
     category: 'tablets',
@@ -2389,7 +2389,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-10-2-2020/spacegray/00.webp',
     screen: "10.2' Retina",
     ram: '3GB',
-    year: 2020,
+    year: 2020
   },
   {
     category: 'tablets',
@@ -2402,7 +2402,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-mini-5th-gen/silver/00.webp',
     screen: "7.9' Retina",
     ram: '3GB',
-    year: 2019,
+    year: 2019
   },
   {
     category: 'tablets',
@@ -2415,7 +2415,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-mini-5th-gen/silver/00.webp',
     screen: "7.9' Retina",
     ram: '3GB',
-    year: 2019,
+    year: 2019
   },
   {
     category: 'tablets',
@@ -2428,7 +2428,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-mini-5th-gen/spacegray/00.webp',
     screen: "7.9' Retina",
     ram: '3GB',
-    year: 2019,
+    year: 2019
   },
   {
     category: 'tablets',
@@ -2441,7 +2441,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-mini-5th-gen/spacegray/00.webp',
     screen: "7.9' Retina",
     ram: '3GB',
-    year: 2019,
+    year: 2019
   },
   {
     category: 'tablets',
@@ -2454,7 +2454,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-mini-5th-gen/gold/00.webp',
     screen: "7.9' Retina",
     ram: '3GB',
-    year: 2019,
+    year: 2019
   },
   {
     category: 'tablets',
@@ -2467,7 +2467,7 @@ export const products = [
     image: 'img/tablets/apple-ipad-mini-5th-gen/gold/00.webp',
     screen: "7.9' Retina",
     ram: '3GB',
-    year: 2019,
+    year: 2019
   },
   {
     category: 'phones',
@@ -2480,7 +2480,7 @@ export const products = [
     color: 'gold',
     ram: '6GB',
     year: 2022,
-    image: 'img/phones/apple-iphone-14-pro/gold/00.webp',
+    image: 'img/phones/apple-iphone-14-pro/gold/00.webp'
   },
   {
     category: 'phones',
@@ -2493,7 +2493,7 @@ export const products = [
     color: 'gold',
     ram: '6GB',
     year: 2022,
-    image: 'img/phones/apple-iphone-14-pro/gold/00.webp',
+    image: 'img/phones/apple-iphone-14-pro/gold/00.webp'
   },
   {
     category: 'phones',
@@ -2506,7 +2506,7 @@ export const products = [
     color: 'gold',
     ram: '6GB',
     year: 2022,
-    image: 'img/phones/apple-iphone-14-pro/gold/00.webp',
+    image: 'img/phones/apple-iphone-14-pro/gold/00.webp'
   },
   {
     category: 'phones',
@@ -2519,6 +2519,6 @@ export const products = [
     color: 'gold',
     ram: '6GB',
     year: 2022,
-    image: 'img/phones/apple-iphone-14-pro/gold/00.webp',
-  },
+    image: 'img/phones/apple-iphone-14-pro/gold/00.webp'
+  }
 ];
