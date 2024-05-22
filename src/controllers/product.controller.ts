@@ -42,7 +42,7 @@ export const getTopDiscountProducts = async (
 ): Promise<void> => {
   const products: Product[] = await productService.getTopDiscountProducts();
   res.send(products);
-}
+};
 
 export const getOne = async (req: Request, res: Response): Promise<void> => {
   const { id } = req.params;
