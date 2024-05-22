@@ -47,7 +47,6 @@ Before running the application, make sure you have the following installed on yo
 
    ```bash
    cd mobile-store-backend
-
    ```
 
 3. Install dependencies:
