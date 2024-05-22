@@ -22,7 +22,9 @@ export default [
       '@typescript-eslint/semi': ['error', 'always'],
       'semi-style': ['error', 'last'],
       '@typescript-eslint/prefer-nullish-coalescing': 'off',
-      '@typescript-eslint/no-misused-promises': 'off'
+      '@typescript-eslint/no-misused-promises': 'off',
+      '@typescript-eslint/no-shadow': 'warn',
+      'no-console': 'error',
     },
     ignores: [
       'node_modules/',
@@ -30,7 +32,7 @@ export default [
       '.git/',
       '.eslintignore',
       'tsconfig.json',
-      '"prisma/*.ts"'
+      'prisma/*.ts'
     ]
   }
 ];

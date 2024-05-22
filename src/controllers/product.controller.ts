@@ -4,8 +4,34 @@ import * as productService from '../services/product.service';
 import { type Product } from '../types/Product';
 import { type Request, type Response } from 'express';
 
-export const get = async (req: Request, res: Response): Promise<void> => {
+export const getAll = async (req: Request, res: Response): Promise<void> => {
   const products: Product[] = await productService.getAll();
+  res.send(products);
+};
+
+export const getOne = async (req: Request, res: Response): Promise<void> => {
+  const { id } = req.params;
+  const productItem = await productService.getOne(id);
+
+  if (productItem === null || productItem === undefined) {
+    res.status(CODE_STATUSES.NOT_FOUND).send(ERROR_MESSAGE.NOT_FOUND);
+
+    return;
+  }
+
+  res.send(productItem);
+};
+
+export const getByCategory = async (req: Request, res: Response): Promise<void> => {
+  const { route: category } = req.params;
+  const products: Product[] = await productService.getByCategory(category);
+
+  if (!products.length) {
+    res.sendStatus(CODE_STATUSES.NOT_FOUND);
+
+    return;
+  }
+
   res.send(products);
 };
 
@@ -14,7 +40,7 @@ export const getRecommended = async (
   res: Response
 ): Promise<void> => {
   try {
-    const { id } = req.params;
+    const { route: id } = req.params;
     const products: Product[] = await productService.getRecommended(+id);
     res.send(products);
   } catch (e: unknown) {
@@ -42,17 +68,4 @@ export const getTopDiscountProducts = async (
 ): Promise<void> => {
   const products: Product[] = await productService.getTopDiscountProducts();
   res.send(products);
-};
-
-export const getOne = async (req: Request, res: Response): Promise<void> => {
-  const { id } = req.params;
-  const productItem = await productService.getById(id);
-
-  if (productItem === null || productItem === undefined) {
-    res.sendStatus(CODE_STATUSES.NOT_FOUND);
-
-    return;
-  }
-
-  res.send(productItem);
 };
