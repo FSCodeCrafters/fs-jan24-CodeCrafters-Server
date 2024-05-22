@@ -41,15 +41,20 @@ Before running the application, make sure you have the following installed on yo
    ```bash
    git clone https://github.com/fs-jan24-CodeCrafters/mobile-store-backend.git
 
+   ```
+
 2. Navigate to the project directory:
 
-    ```bash
-    cd mobile-store-backend
+   ```bash
+   cd mobile-store-backend
+
+   ```
 
 3. Install dependencies:
 
-    ```bash
-    npm install
+   ```bash
+   npm install
+   ```
 
 ### Running the App
 
@@ -73,26 +78,28 @@ The project follows a standard folder structure for better organization:
 
     ```bash
     fs-jan24-codecrafters-server/
+
 │
-├── prisma/              # Prisma schema and migrations
-│   ├── migrations/      # Database migration files
-│   └── schema.prisma    # Prisma schema file
+├── prisma/ # Prisma schema and migrations
+│ ├── migrations/ # Database migration files
+│ └── schema.prisma # Prisma schema file
 │
-├── src/                 # Source files
-│   ├── controllers/     # Express route controllers
-│   ├── middleware/      # Custom middleware
-│   ├── models/          # Prisma models
-│   ├── routes/          # Express routes
-│   ├── services/        # Business logic and services
-│   ├── utils/           # Utility functions
-│   ├── app.ts           # Express app configuration
-│   └── server.ts        # Entry point of the application
+├── src/ # Source files
+│ ├── controllers/ # Express route controllers
+│ ├── middleware/ # Custom middleware
+│ ├── models/ # Prisma models
+│ ├── routes/ # Express routes
+│ ├── services/ # Business logic and services
+│ ├── utils/ # Utility functions
+│ ├── app.ts # Express app configuration
+│ └── server.ts # Entry point of the application
 │
-├── .env                 # Environment variables
-├── .gitignore           # Git ignore file
-├── package.json         # Project metadata and dependencies
-└── README.md            # Project documentation
-    ```
+├── .env # Environment variables
+├── .gitignore # Git ignore file
+├── package.json # Project metadata and dependencies
+└── README.md # Project documentation
+
+```
 
 ## Contributing
 
@@ -101,3 +108,4 @@ Contributions are welcome! If you find any bugs or have suggestions for improvem
 ## License
 
 This project is licensed under the MIT License.
+```
