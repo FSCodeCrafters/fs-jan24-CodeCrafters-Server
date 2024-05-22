@@ -1,17 +1,16 @@
-'use strict'
+'use strict';
 
-import express from 'express'
-import cors from 'cors'
+import express from 'express';
+import cors from 'cors';
+import { router as productRouter } from './routes/product.route';
 
-const PORT = process.env.PORT ?? 3000
-const server = express()
+const PORT = process.env.PORT ?? 3000;
+const server = express();
 
-server.use(cors({ origin: '*' }))
+server.use(cors({ origin: '*' }));
 
-server.get('*', (req, res) => {
-  res.send('Hello, World!')
-})
+server.use('/products', express.json(), productRouter);
 
 server.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`)
-})
+  console.log(`Server is running on http://localhost:${PORT}`);
+});

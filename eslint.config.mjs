@@ -20,8 +20,17 @@ export default [
     rules: {
       semi: 'off',
       '@typescript-eslint/semi': ['error', 'always'],
-      'semi-style': ['error', 'last']
+      'semi-style': ['error', 'last'],
+      '@typescript-eslint/prefer-nullish-coalescing': 'off',
+      '@typescript-eslint/no-misused-promises': 'off'
     },
-    ignores: ['node_modules/', 'dist/', '.git/', '.eslintignore']
+    ignores: [
+      'node_modules/',
+      'dist/',
+      '.git/',
+      '.eslintignore',
+      'tsconfig.json',
+      '"prisma/*.ts"'
+    ]
   }
 ];
