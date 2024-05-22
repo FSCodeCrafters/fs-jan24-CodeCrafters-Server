@@ -1,3 +1,4 @@
+
 import { ERROR_MESSAGE } from '../constants/error.messages';
 import * as productService from '../services/product.service';
 import { type Product } from '../types/Product';
@@ -42,4 +43,16 @@ export const getTopDiscountProducts = async (
 ): Promise<void> => {
   const products: Product[] = await productService.getTopDiscountProducts();
   res.send(products);
+
+export const getOne = async (req: Request, res: Response): Promise<void> => {
+  const { id } = req.params;
+  const productItem = await productService.getById(id);
+
+  if (productItem === null || productItem === undefined) {
+    res.sendStatus(CODE_STATUSES.NOT_FOUND);
+
+    return;
+  }
+
+  res.send(productItem);
 };
