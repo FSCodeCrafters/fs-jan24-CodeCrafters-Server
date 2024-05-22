@@ -4,10 +4,10 @@ import express from 'express';
 import cors from 'cors';
 import { router as productRouter } from './routes/product.route';
 
-const PORT = process.env.PORT ?? 3000;
+const PORT = process.env.PORT ?? 3005;
 const server = express();
 
-server.use(cors({ origin: '*' }));
+server.use(cors());
 
 server.use('/products', express.json(), productRouter);
 

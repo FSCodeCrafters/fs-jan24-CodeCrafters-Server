@@ -3,7 +3,7 @@ import { type ProductDescription } from './ProductDescription';
 export interface ProductDetails {
   id: string
   category: string
-  namespaceId: string
+  namespaceId?: string | null
   name: string
   capacityAvailable: string[]
   capacity: string
@@ -17,7 +17,7 @@ export interface ProductDetails {
   resolution: string
   processor: string
   ram: string
-  camera: string
-  zoom: string
+  camera?: string | null
+  zoom?: string | null
   cell: string[]
 }
