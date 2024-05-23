@@ -10,19 +10,6 @@ export const getAll = async (req: Request, res: Response): Promise<void> => {
   res.send(products);
 };
 
-export const getOne = async (req: Request, res: Response): Promise<void> => {
-  const { id } = req.params;
-  const productItem = await productService.getOne(id);
-
-  if (!productItem) {
-    res.status(CODE_STATUSES.NOT_FOUND).send(ERROR_MESSAGE.NOT_FOUND);
-
-    return;
-  }
-
-  res.send(productItem);
-};
-
 export const getByCategory = async (
   req: Request,
   res: Response,
@@ -83,4 +70,20 @@ export const getTopDiscountProducts = async (
 ): Promise<void> => {
   const products: Product[] = await productService.getTopDiscountProducts();
   res.send(products);
+};
+
+export const searchProductsByTitle = async (
+  req: Request,
+  res: Response,
+): Promise<void> => {
+  try {
+    const nameQuery = req.query.name as string;
+    const products = await productService.searchProductsByTitle(nameQuery);
+    res.send(products);
+  } catch (e: unknown) {
+    const error = e as Error;
+    if (error.message === ERROR_MESSAGE.BAD_REQUEST) {
+      res.status(CODE_STATUSES.BAD_REQUEST).send(ERROR_MESSAGE.BAD_REQUEST);
+    }
+  }
 };
