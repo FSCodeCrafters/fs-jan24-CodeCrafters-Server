@@ -14,11 +14,3 @@ router.get(
   determineRoute('category'),
   catchError(productController.getByCategory),
 );
-router.get(
-  '/:route/recommended',
-  determineRoute('id'),
-  catchError(productController.getRecommended),
-);
-
-router.get('/new', catchError(productController.getNewestProducts));
-router.get('/discount', catchError(productController.getTopDiscountProducts));
