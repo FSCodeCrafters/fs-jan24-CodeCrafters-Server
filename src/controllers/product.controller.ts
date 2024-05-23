@@ -6,6 +6,7 @@ import { type Request, type Response } from 'express';
 
 export const getAll = async (req: Request, res: Response): Promise<void> => {
   const products: Product[] = await productService.getAll();
+
   res.send(products);
 };
 
@@ -13,7 +14,7 @@ export const getOne = async (req: Request, res: Response): Promise<void> => {
   const { id } = req.params;
   const productItem = await productService.getOne(id);
 
-  if (productItem === null || productItem === undefined) {
+  if (!productItem) {
     res.status(CODE_STATUSES.NOT_FOUND).send(ERROR_MESSAGE.NOT_FOUND);
 
     return;
@@ -27,7 +28,18 @@ export const getByCategory = async (
   res: Response,
 ): Promise<void> => {
   const { route: category } = req.params;
-  const products: Product[] = await productService.getByCategory(category);
+  const {
+    sort,
+    perPage,
+    page,
+  }: {
+    sort?: string | undefined;
+    perPage?: string | undefined;
+    page?: string | undefined;
+  } = req.query;
+
+  const { products, totalPages }: { products: Product[]; totalPages: number } =
+    await productService.getByCategory(category, sort, perPage, page);
 
   if (products.length === 0) {
     res.sendStatus(CODE_STATUSES.NOT_FOUND);
@@ -35,7 +47,7 @@ export const getByCategory = async (
     return;
   }
 
-  res.send(products);
+  res.send({ products, totalPages });
 };
 
 export const getRecommended = async (

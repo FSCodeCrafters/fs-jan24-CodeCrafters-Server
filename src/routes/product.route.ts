@@ -9,12 +9,12 @@ router.get('/', catchError(productController.getAll));
 router.get(
   '/:route',
   determineRoute('category'),
-  catchError(productController.getByCategory),
+  catchError(productController.getByCategory)
 );
 router.get(
   '/:route/recommended',
   determineRoute('id'),
-  catchError(productController.getRecommended),
+  catchError(productController.getRecommended)
 );
 router.get('/new', catchError(productController.getNewestProducts));
 router.get('/discount', catchError(productController.getTopDiscountProducts));
