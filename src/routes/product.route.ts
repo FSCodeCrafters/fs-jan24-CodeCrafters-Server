@@ -6,6 +6,9 @@ import { determineRoute } from '../utils/determineRoute';
 export const router = express.Router();
 
 router.get('/', catchError(productController.getAll));
+router.get('/search', catchError(productController.searchProductsByTitle));
+router.get('/new', catchError(productController.getNewestProducts));
+router.get('/discount', catchError(productController.getTopDiscountProducts));
 router.get(
   '/:route',
   determineRoute('category'),
@@ -16,5 +19,6 @@ router.get(
   determineRoute('id'),
   catchError(productController.getRecommended),
 );
+
 router.get('/new', catchError(productController.getNewestProducts));
 router.get('/discount', catchError(productController.getTopDiscountProducts));
