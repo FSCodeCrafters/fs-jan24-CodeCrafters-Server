@@ -46,28 +46,6 @@ export const getByCategory = async (
   return { products, totalPages };
 };
 
-export const getRecommended = async (id: number): Promise<Product[]> => {
-  const product = await db.product.findUnique({
-    where: { id },
-  });
-
-  if (product === null) {
-    throw new Error(ERROR_MESSAGE.NOT_FOUND);
-  }
-
-  const category = product.category;
-
-  return await db.product.findMany({
-    where: {
-      category,
-      id: {
-        not: id,
-      },
-    },
-    take: 20,
-  });
-};
-
 export const getNewestProducts = async (): Promise<Product[]> => {
   return await db.product.findMany({
     where: {
