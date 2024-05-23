@@ -1,19 +1,10 @@
 import { db } from '../db';
 import { ERROR_MESSAGE } from '../constants/error.messages';
-import { type ProductItem } from '@prisma/client';
 import { type Product } from '../types/Product';
 import { PER_PAGE, SORT_BY } from '../constants/sorting';
 
 export const getAll = async (): Promise<Product[]> => {
   return await db.product.findMany();
-};
-
-export const getOne = async (id: string): Promise<ProductItem | null> => {
-  return await db.productItem.findUnique({
-    where: {
-      id,
-    },
-  });
 };
 
 export const getTotalCountByCategory = async (

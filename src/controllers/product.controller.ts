@@ -10,19 +10,6 @@ export const getAll = async (req: Request, res: Response): Promise<void> => {
   res.send(products);
 };
 
-export const getOne = async (req: Request, res: Response): Promise<void> => {
-  const { id } = req.params;
-  const productItem = await productService.getOne(id);
-
-  if (!productItem) {
-    res.status(CODE_STATUSES.NOT_FOUND).send(ERROR_MESSAGE.NOT_FOUND);
-
-    return;
-  }
-
-  res.send(productItem);
-};
-
 export const getByCategory = async (
   req: Request,
   res: Response,

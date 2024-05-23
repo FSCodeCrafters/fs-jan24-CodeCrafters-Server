@@ -18,4 +18,3 @@ router.get(
 );
 router.get('/new', catchError(productController.getNewestProducts));
 router.get('/discount', catchError(productController.getTopDiscountProducts));
-router.get('/:id', catchError(productController.getOne)); // will work after moving into new route directory
