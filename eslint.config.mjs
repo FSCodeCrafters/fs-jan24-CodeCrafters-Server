@@ -9,7 +9,7 @@ const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
 const compat = new FlatCompat({
   baseDirectory: dirname,
-  recommendedConfig: pluginJs.configs.recommended,
+  recommendedConfig: pluginJs.configs.recommended
 });
 
 export default [
@@ -24,7 +24,7 @@ export default [
       '@typescript-eslint/prefer-nullish-coalescing': 'off',
       '@typescript-eslint/no-misused-promises': 'off',
       '@typescript-eslint/no-shadow': 'warn',
-      '@typescript-eslint/strict-boolean-expressions': 'off',
+      '@typescript-eslint/strict-boolean-expressions': 'off'
     },
     ignores: [
       'node_modules/',
@@ -32,7 +32,7 @@ export default [
       '.git/',
       '.eslintignore',
       'tsconfig.json',
-      'prisma/*.ts',
-    ],
-  },
+      'prisma/*.ts'
+    ]
+  }
 ];

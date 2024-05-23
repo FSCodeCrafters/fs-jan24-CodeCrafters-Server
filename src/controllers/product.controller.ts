@@ -25,20 +25,20 @@ export const getOne = async (req: Request, res: Response): Promise<void> => {
 
 export const getByCategory = async (
   req: Request,
-  res: Response,
+  res: Response
 ): Promise<void> => {
   const { route: category } = req.params;
   const {
     sort,
     perPage,
-    page,
+    page
   }: {
-    sort?: string | undefined;
-    perPage?: string | undefined;
-    page?: string | undefined;
+    sort?: string | undefined
+    perPage?: string | undefined
+    page?: string | undefined
   } = req.query;
 
-  const { products, totalPages }: { products: Product[]; totalPages: number } =
+  const { products, totalPages }: { products: Product[], totalPages: number } =
     await productService.getByCategory(category, sort, perPage, page);
 
   if (products.length === 0) {
@@ -52,7 +52,7 @@ export const getByCategory = async (
 
 export const getRecommended = async (
   req: Request,
-  res: Response,
+  res: Response
 ): Promise<void> => {
   try {
     const { route: id } = req.params;
@@ -71,7 +71,7 @@ export const getRecommended = async (
 
 export const getNewestProducts = async (
   req: Request,
-  res: Response,
+  res: Response
 ): Promise<void> => {
   const products: Product[] = await productService.getNewestProducts();
   res.send(products);
@@ -79,7 +79,7 @@ export const getNewestProducts = async (
 
 export const getTopDiscountProducts = async (
   req: Request,
-  res: Response,
+  res: Response
 ): Promise<void> => {
   const products: Product[] = await productService.getTopDiscountProducts();
   res.send(products);
