@@ -14,3 +14,8 @@ router.get(
   determineRoute('category'),
   catchError(productController.getByCategory),
 );
+router.get(
+  '/:route/recommended',
+  determineRoute('itemId'),
+  catchError(productController.getRecommended),
+);

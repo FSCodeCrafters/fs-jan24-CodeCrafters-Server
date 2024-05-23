@@ -79,3 +79,23 @@ export const searchProductsByTitle = async (
     },
   });
 };
+
+export const getRecommended = async (itemId: string): Promise<Product[]> => {
+  const product = await db.product.findFirst({
+    where: { itemId },
+  });
+  if (product === null) {
+    throw new Error(ERROR_MESSAGE.NOT_FOUND);
+  }
+  const category = product.category;
+
+  return await db.product.findMany({
+    where: {
+      category,
+      itemId: {
+        not: product.itemId,
+      },
+    },
+    take: 20,
+  });
+};

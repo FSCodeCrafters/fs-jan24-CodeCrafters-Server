@@ -68,3 +68,22 @@ export const searchProductsByTitle = async (
     }
   }
 };
+
+export const getRecommended = async (
+  req: Request,
+  res: Response,
+): Promise<void> => {
+  try {
+    const { route: id } = req.params;
+    const products: Product[] = await productService.getRecommended(id);
+    res.send(products);
+  } catch (e: unknown) {
+    const error = e as Error;
+    if (error.message === ERROR_MESSAGE.BAD_REQUEST) {
+      res.status(CODE_STATUSES.BAD_REQUEST).send(ERROR_MESSAGE.BAD_REQUEST);
+    }
+    if (error.message === ERROR_MESSAGE.NOT_FOUND) {
+      res.status(CODE_STATUSES.NOT_FOUND).send(ERROR_MESSAGE.NOT_FOUND);
+    }
+  }
+};
