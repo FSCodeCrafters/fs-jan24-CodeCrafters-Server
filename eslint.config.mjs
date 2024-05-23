@@ -16,6 +16,7 @@ export default [
   { languageOptions: { globals: globals.node } },
   ...compat.extends('standard-with-typescript'),
   ...compat.extends('plugin:@typescript-eslint/recommended'),
+  ...compat.extends('plugin:prettier/recommended'),
   {
     rules: {
       semi: 'off',
