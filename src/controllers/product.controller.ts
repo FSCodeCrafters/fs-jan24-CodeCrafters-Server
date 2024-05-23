@@ -4,7 +4,7 @@ import * as productService from '../services/product.service';
 import { type Product } from '../types/Product';
 import { type Request, type Response } from 'express';
 
-export const getAll = async (req: Request, res: Response): Promise<void> => {
+export const getAll = async (_req: Request, res: Response): Promise<void> => {
   const products: Product[] = await productService.getAll();
 
   res.send(products);
@@ -57,7 +57,7 @@ export const getRecommended = async (
 };
 
 export const getNewestProducts = async (
-  req: Request,
+  _req: Request,
   res: Response,
 ): Promise<void> => {
   const products: Product[] = await productService.getNewestProducts();
@@ -65,7 +65,7 @@ export const getNewestProducts = async (
 };
 
 export const getTopDiscountProducts = async (
-  req: Request,
+  _req: Request,
   res: Response,
 ): Promise<void> => {
   const products: Product[] = await productService.getTopDiscountProducts();
