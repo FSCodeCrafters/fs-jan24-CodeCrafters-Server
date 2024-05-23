@@ -14,6 +14,7 @@ server.use('/products', express.json(), productRouter);
 server.use('/productItem', express.json(), productItem);
 
 server.listen(PORT, () => {
+  // eslint-disable-next-line no-console
   console.log(`Server is running on http://localhost:${PORT}`);
 });
 
