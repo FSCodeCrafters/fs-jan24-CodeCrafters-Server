@@ -16,7 +16,6 @@ export default [
   { languageOptions: { globals: globals.node } },
   ...compat.extends('standard-with-typescript'),
   ...compat.extends('plugin:@typescript-eslint/recommended'),
-  ...compat.extends('eslint-config-prettier'),
   {
     rules: {
       semi: 'off',
@@ -25,6 +24,7 @@ export default [
       '@typescript-eslint/prefer-nullish-coalescing': 'off',
       '@typescript-eslint/no-misused-promises': 'off',
       '@typescript-eslint/no-shadow': 'warn',
+      '@typescript-eslint/strict-boolean-expressions': 'off',
     },
     ignores: [
       'node_modules/',

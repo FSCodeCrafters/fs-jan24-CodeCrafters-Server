@@ -1,4 +1,4 @@
 export interface ProductDescription {
-  title: string;
-  text: string[];
+  title: string
+  text: string[]
 }
