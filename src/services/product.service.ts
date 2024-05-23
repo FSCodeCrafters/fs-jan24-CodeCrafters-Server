@@ -93,3 +93,20 @@ export const getTopDiscountProducts = async (): Promise<Product[]> => {
 
   return products.slice(0, 20);
 };
+
+export const searchProductsByTitle = async (
+  searchTerm: string,
+): Promise<Product[]> => {
+  if (!searchTerm) {
+    throw new Error(ERROR_MESSAGE.BAD_REQUEST);
+  }
+
+  return await db.product.findMany({
+    where: {
+      name: {
+        contains: searchTerm,
+        mode: 'insensitive',
+      },
+    },
+  });
+};

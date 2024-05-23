@@ -59,15 +59,15 @@ Before running the application, make sure you have the following installed on yo
 
 To run the application locally, use the following command:
 
-    ```bash
+```bash
     npm start
-    ```
+```
 
-    or for development
+or for development
 
-    ```bash
+```bash
     npm run dev
-    ```
+```
 
 This will start the server, and you can access the API at http://localhost:3000/.
 
@@ -75,9 +75,8 @@ This will start the server, and you can access the API at http://localhost:3000/
 
 The project follows a standard folder structure for better organization:
 
-    ```bash
-    fs-jan24-codecrafters-server/
-
+```graphql
+fs-jan24-CodeCrafters-Server/
 │
 ├── prisma/ # Prisma schema and migrations
 │ ├── migrations/ # Database migration files
@@ -97,7 +96,6 @@ The project follows a standard folder structure for better organization:
 ├── .gitignore # Git ignore file
 ├── package.json # Project metadata and dependencies
 └── README.md # Project documentation
-
 ```
 
 ## Contributing
@@ -107,4 +105,3 @@ Contributions are welcome! If you find any bugs or have suggestions for improvem
 ## License
 
 This project is licensed under the MIT License.
-```
