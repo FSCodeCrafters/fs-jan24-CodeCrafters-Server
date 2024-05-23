@@ -20,4 +20,5 @@ router.get(
   catchError(productController.getRecommended),
 );
 
-router.get('/:id', catchError(productController.getOne)); // will work after moving into new route directory
+router.get('/new', catchError(productController.getNewestProducts));
+router.get('/discount', catchError(productController.getTopDiscountProducts));
