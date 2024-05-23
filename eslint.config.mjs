@@ -25,6 +25,7 @@ export default [
       '@typescript-eslint/prefer-nullish-coalescing': 'off',
       '@typescript-eslint/no-misused-promises': 'off',
       '@typescript-eslint/no-shadow': 'warn',
+      '@typescript-eslint/strict-boolean-expressions': 'off',
     },
     ignores: [
       'node_modules/',
