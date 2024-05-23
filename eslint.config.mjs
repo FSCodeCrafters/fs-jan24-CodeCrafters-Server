@@ -9,20 +9,22 @@ const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
 const compat = new FlatCompat({
   baseDirectory: dirname,
-  recommendedConfig: pluginJs.configs.recommended
+  recommendedConfig: pluginJs.configs.recommended,
 });
 
 export default [
   { languageOptions: { globals: globals.node } },
   ...compat.extends('standard-with-typescript'),
   ...compat.extends('plugin:@typescript-eslint/recommended'),
+  ...compat.extends('eslint-config-prettier'),
   {
     rules: {
       semi: 'off',
       '@typescript-eslint/semi': ['error', 'always'],
       'semi-style': ['error', 'last'],
       '@typescript-eslint/prefer-nullish-coalescing': 'off',
-      '@typescript-eslint/no-misused-promises': 'off'
+      '@typescript-eslint/no-misused-promises': 'off',
+      '@typescript-eslint/no-shadow': 'warn',
     },
     ignores: [
       'node_modules/',
@@ -30,7 +32,7 @@ export default [
       '.git/',
       '.eslintignore',
       'tsconfig.json',
-      '"prisma/*.ts"'
-    ]
-  }
+      'prisma/*.ts',
+    ],
+  },
 ];

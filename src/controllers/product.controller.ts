@@ -4,17 +4,46 @@ import * as productService from '../services/product.service';
 import { type Product } from '../types/Product';
 import { type Request, type Response } from 'express';
 
-export const get = async (req: Request, res: Response): Promise<void> => {
+export const getAll = async (req: Request, res: Response): Promise<void> => {
   const products: Product[] = await productService.getAll();
+  res.send(products);
+};
+
+export const getOne = async (req: Request, res: Response): Promise<void> => {
+  const { id } = req.params;
+  const productItem = await productService.getOne(id);
+
+  if (productItem === null || productItem === undefined) {
+    res.status(CODE_STATUSES.NOT_FOUND).send(ERROR_MESSAGE.NOT_FOUND);
+
+    return;
+  }
+
+  res.send(productItem);
+};
+
+export const getByCategory = async (
+  req: Request,
+  res: Response,
+): Promise<void> => {
+  const { route: category } = req.params;
+  const products: Product[] = await productService.getByCategory(category);
+
+  if (products.length === 0) {
+    res.sendStatus(CODE_STATUSES.NOT_FOUND);
+
+    return;
+  }
+
   res.send(products);
 };
 
 export const getRecommended = async (
   req: Request,
-  res: Response
+  res: Response,
 ): Promise<void> => {
   try {
-    const { id } = req.params;
+    const { route: id } = req.params;
     const products: Product[] = await productService.getRecommended(+id);
     res.send(products);
   } catch (e: unknown) {
@@ -30,7 +59,7 @@ export const getRecommended = async (
 
 export const getNewestProducts = async (
   req: Request,
-  res: Response
+  res: Response,
 ): Promise<void> => {
   const products: Product[] = await productService.getNewestProducts();
   res.send(products);
@@ -38,21 +67,8 @@ export const getNewestProducts = async (
 
 export const getTopDiscountProducts = async (
   req: Request,
-  res: Response
+  res: Response,
 ): Promise<void> => {
   const products: Product[] = await productService.getTopDiscountProducts();
   res.send(products);
-};
-
-export const getOne = async (req: Request, res: Response): Promise<void> => {
-  const { id } = req.params;
-  const productItem = await productService.getById(id);
-
-  if (productItem === null || productItem === undefined) {
-    res.sendStatus(CODE_STATUSES.NOT_FOUND);
-
-    return;
-  }
-
-  res.send(productItem);
 };
