@@ -26,7 +26,12 @@ export const getByCategory = async (
   } = req.query;
 
   const { products, totalPages }: { products: Product[]; totalPages: number } =
-    await productService.getByCategory(category, sort, perPage, page);
+    await productService.getByCategory(
+      category,
+      sort,
+      perPage as string,
+      page as string,
+    );
 
   if (products.length === 0) {
     res.sendStatus(CODE_STATUSES.NOT_FOUND);

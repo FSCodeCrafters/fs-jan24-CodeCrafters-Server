@@ -20,13 +20,13 @@ export const getTotalCountByCategory = async (
 export const getByCategory = async (
   category: string,
   sortBy: string | undefined,
-  perPage: string | undefined,
-  page: string | undefined,
+  perPage: string,
+  page: string,
 ): Promise<{ products: Product[]; totalPages: number }> => {
   const orderBy =
     sortBy && SORT_BY.includes(sortBy) ? { [sortBy]: 'asc' } : undefined;
 
-  const take = perPage && PER_PAGE.includes(perPage) ? Number(perPage) : 16;
+  const take = PER_PAGE.includes(perPage) ? Number(perPage) : 16;
 
   const pageNumber = page ? Number(page) : 1;
   const skip = (pageNumber - 1) * take;
