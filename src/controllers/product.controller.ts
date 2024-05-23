@@ -84,3 +84,19 @@ export const getTopDiscountProducts = async (
   const products: Product[] = await productService.getTopDiscountProducts();
   res.send(products);
 };
+
+export const searchProductsByTitle = async (
+  req: Request,
+  res: Response,
+): Promise<void> => {
+  try {
+    const nameQuery = req.query.name as string;
+    const products = await productService.searchProductsByTitle(nameQuery);
+    res.send(products);
+  } catch (e: unknown) {
+    const error = e as Error;
+    if (error.message === ERROR_MESSAGE.BAD_REQUEST) {
+      res.status(CODE_STATUSES.BAD_REQUEST).send(ERROR_MESSAGE.BAD_REQUEST);
+    }
+  }
+};
