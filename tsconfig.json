@@ -12,6 +12,6 @@
     "noUnusedParameters": true,
     "skipLibCheck": true
   },
-  "include": ["src/**/*.ts", "eslint.config.mjs", "prisma/**/*.ts"],
+  "include": ["src/**/*.ts", "eslint.config.mjs", "prisma/**/*.ts", "src/routes/auth.routets"],
   "exclude": ["node_modules"]
 }
