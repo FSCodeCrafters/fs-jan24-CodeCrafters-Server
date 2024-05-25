@@ -19,27 +19,33 @@ export const getByCategory = async (
     sort,
     perPage,
     page,
+    range,
   }: {
     sort?: string | undefined;
     perPage?: string | undefined;
     page?: string | undefined;
+    range?: string | undefined;
   } = req.query;
 
-  const { products, totalPages }: { products: Product[]; totalPages: number } =
-    await productService.getByCategory(
-      category,
-      sort,
-      perPage as string,
-      page as string,
-    );
+  const {
+    products,
+    totalPages,
+    min,
+    max,
+  }: {
+    products: Product[];
+    totalPages: number;
+    min: number;
+    max: number;
+  } = await productService.getByCategory(
+    category,
+    sort,
+    perPage as string,
+    page as string,
+    range as string,
+  );
 
-  if (products.length === 0) {
-    res.sendStatus(CODE_STATUSES.NOT_FOUND);
-
-    return;
-  }
-
-  res.send({ products, totalPages });
+  res.send({ products, totalPages, min, max });
 };
 
 export const getNewestProducts = async (
