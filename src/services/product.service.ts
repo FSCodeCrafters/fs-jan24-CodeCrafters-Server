@@ -9,12 +9,43 @@ export const getAll = async (): Promise<Product[]> => {
 
 export const getTotalCountByCategory = async (
   category: string,
+  minPrice: number,
+  maxPrice: number,
 ): Promise<number> => {
-  return await db.product.count({
+  const where = {
+    category,
+    price: {
+      gte: minPrice,
+      lte: maxPrice,
+    },
+  };
+
+  const totalCount = await db.product.count({
+    where,
+  });
+
+  return totalCount;
+};
+
+export const getMinMaxPriceByCategory = async (
+  category: string,
+): Promise<{ minPrice: number; maxPrice: number }> => {
+  const result = await db.product.aggregate({
     where: {
       category,
     },
+    _min: {
+      price: true,
+    },
+    _max: {
+      price: true,
+    },
   });
+
+  return {
+    minPrice: result._min.price || 0,
+    maxPrice: result._max.price || 0,
+  };
 };
 
 export const getByCategory = async (
@@ -22,7 +53,13 @@ export const getByCategory = async (
   sortBy: string | undefined,
   perPage: string,
   page: string,
-): Promise<{ products: Product[]; totalPages: number }> => {
+  range: string | null,
+): Promise<{
+  products: Product[];
+  totalPages: number;
+  min: number;
+  max: number;
+}> => {
   const orderBy =
     sortBy && SORT_BY.includes(sortBy) ? { [sortBy]: 'asc' } : undefined;
 
@@ -30,20 +67,34 @@ export const getByCategory = async (
 
   const pageNumber = page ? Number(page) : 1;
   const skip = (pageNumber - 1) * take;
+  const { minPrice: min, maxPrice: max } =
+    await getMinMaxPriceByCategory(category);
+
+  const minPrice = Number(range?.split(',')[0]) || min;
+  const maxPrice = Number(range?.split(',')[1]) || max;
 
   const products = await db.product.findMany({
     where: {
       category,
+      price: {
+        gte: minPrice,
+        lte: maxPrice,
+      },
     },
     orderBy,
     skip,
     take,
   });
 
-  const totalCount = await getTotalCountByCategory(category);
+  const totalCount = await getTotalCountByCategory(
+    category,
+    minPrice,
+    maxPrice,
+  );
+
   const totalPages = Math.ceil(totalCount / take);
 
-  return { products, totalPages };
+  return { products, totalPages, min, max };
 };
 
 export const getNewestProducts = async (): Promise<Product[]> => {
