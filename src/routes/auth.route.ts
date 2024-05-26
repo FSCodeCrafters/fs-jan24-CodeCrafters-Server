@@ -1,6 +1,9 @@
 import passport from 'passport';
 import { Router } from 'express';
 import { CODE_STATUSES } from '../constants/code.statuses';
+import { catchError } from '../utils/catchError';
+import * as userController from '../controllers/user.controller';
+
 export const router = Router();
 
 router.get('/api/auth/status', (request, response) => {
@@ -28,3 +31,6 @@ router.get(
     response.sendStatus(CODE_STATUSES.OK);
   },
 );
+
+router.post('/api/auth/register', catchError(userController.createUser));
+router.post('/api/auth/login', catchError(userController.loginUser));

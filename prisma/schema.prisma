@@ -20,7 +20,6 @@ model ProductItem {
   colorsAvailable   String[]
   color             String
   images            String[]
-  description       Json[]
   screen            String
   resolution        String
   processor         String
@@ -28,6 +27,7 @@ model ProductItem {
   camera            String?
   zoom              String?
   cell              String[]
+  description       Json[]
   Product           Product[]
 }
 
@@ -53,4 +53,5 @@ model User {
   name  String?
   email String  @unique
   image String?
+  password String?
 }
