@@ -39,8 +39,8 @@ export const getUser = async (req: Request, res: Response): Promise<void> => {
 export const loginUser = async (req: Request, res: Response): Promise<void> => {
   try {
     const { email, password } = req.body;
-    const user = await userService.loginUser(email, password);
-    res.send(user);
+    const userId = await userService.loginUser(email, password);
+    res.send(userId);
   } catch (e: unknown) {
     const error = e as Error;
     if (error.message === ERROR_MESSAGE.INVALID_CREDENTIALS) {

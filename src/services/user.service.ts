@@ -32,7 +32,7 @@ export const getUser = async (email: string): Promise<User | null> => {
 export const loginUser = async (
   email: string,
   password: string,
-): Promise<User | null> => {
+): Promise<string | null> => {
   const user = await getUser(email);
   if (!user) {
     throw new Error(ERROR_MESSAGE.INVALID_CREDENTIALS);
@@ -48,5 +48,5 @@ export const loginUser = async (
     throw new Error(ERROR_MESSAGE.INVALID_CREDENTIALS);
   }
 
-  return user;
+  return user.id;
 };
