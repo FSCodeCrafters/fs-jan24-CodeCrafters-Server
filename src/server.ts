@@ -13,7 +13,7 @@ const PORT = process.env.PORT ?? 3005;
 const server = express();
 const allowedList = [
   'http://localhost:5173',
-  'https://fs-jan24-codecrafters.github.io/fs-jan24-CodeCrafters',
+  'https://fs-jan24-codecrafters.github.io',
 ];
 
 const corsOptions = {
