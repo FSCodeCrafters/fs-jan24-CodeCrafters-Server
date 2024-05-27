@@ -20,8 +20,8 @@ export const createUser = async (
     }
 
     const { email, password } = result.data;
-    const userId = await userService.createUser(email, password);
-    res.send(userId);
+    const user = await userService.createUser(email, password);
+    res.send(user);
   } catch (e: unknown) {
     const error = e as Error;
     if (error.message === ERROR_MESSAGE.EMAIL_ALREADY_EXISTS) {

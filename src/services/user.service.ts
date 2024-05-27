@@ -1,11 +1,13 @@
 import { User } from '@prisma/client';
 import { db } from '../db';
 import { ERROR_MESSAGE } from '../constants/error.messages';
+import { mapUserToSession } from '../helpers/userSession';
+import { UserSession } from '../types/UserSession';
 
 export const createUser = async (
   email: string,
   password: string,
-): Promise<User> => {
+): Promise<UserSession> => {
   try {
     const user = await db.user.create({
       data: {
@@ -13,7 +15,7 @@ export const createUser = async (
         password,
       },
     });
-    return user;
+    return mapUserToSession(user);
   } catch (e) {
     throw new Error(ERROR_MESSAGE.EMAIL_ALREADY_EXISTS);
   }
@@ -32,7 +34,7 @@ export const getUser = async (email: string): Promise<User | null> => {
 export const loginUser = async (
   email: string,
   password: string,
-): Promise<string | null> => {
+): Promise<UserSession | null> => {
   const user = await getUser(email);
   if (!user) {
     throw new Error(ERROR_MESSAGE.INVALID_CREDENTIALS);
@@ -48,5 +50,5 @@ export const loginUser = async (
     throw new Error(ERROR_MESSAGE.INVALID_CREDENTIALS);
   }
 
-  return user.id;
+  return mapUserToSession(user);
 };
