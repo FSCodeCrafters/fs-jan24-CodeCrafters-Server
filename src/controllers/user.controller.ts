@@ -2,20 +2,25 @@ import { type Request, type Response } from 'express';
 import * as userService from '../services/user.service';
 import { ERROR_MESSAGE } from '../constants/error.messages';
 import { CODE_STATUSES } from '../constants/code.statuses';
+import {
+  LoginSchema,
+  RegistrationSchema,
+} from '../schemas/authValidationSchema';
 
 export const createUser = async (
   req: Request,
   res: Response,
 ): Promise<void> => {
   try {
-    const { email, password } = req.body;
+    const result = RegistrationSchema.safeParse(req.body);
 
-    if (!email || !password) {
-      res.status(CODE_STATUSES.BAD_REQUEST).send(ERROR_MESSAGE.BAD_REQUEST);
+    if (!result.success) {
+      res.status(CODE_STATUSES.BAD_REQUEST).send(result.error.errors);
+      return;
     }
 
+    const { email, password } = result.data;
     const user = await userService.createUser(email, password);
-
     res.send(user);
   } catch (e: unknown) {
     const error = e as Error;
@@ -38,7 +43,14 @@ export const getUser = async (req: Request, res: Response): Promise<void> => {
 
 export const loginUser = async (req: Request, res: Response): Promise<void> => {
   try {
-    const { email, password } = req.body;
+    const result = LoginSchema.safeParse(req.body);
+
+    if (!result.success) {
+      res.status(CODE_STATUSES.BAD_REQUEST).send(result.error.errors);
+      return;
+    }
+
+    const { email, password } = result.data;
     const user = await userService.loginUser(email, password);
     res.send(user);
   } catch (e: unknown) {
