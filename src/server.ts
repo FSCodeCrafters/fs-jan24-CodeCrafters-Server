@@ -11,8 +11,27 @@ import './strategies/google-strategy';
 
 const PORT = process.env.PORT ?? 3005;
 const server = express();
+const allowedList = [
+  'http://localhost:5173',
+  'https://fs-jan24-codecrafters.github.io/fs-jan24-CodeCrafters',
+];
 
-server.use(cors());
+const corsOptions = {
+  origin: function (
+    origin: string | undefined,
+    callback: (err: Error | null, allow?: boolean) => void,
+  ) {
+    if (!origin || allowedList.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  methods: 'GET,HEAD,POST,DELETE',
+  allowedHeaders: 'Content-Type, Authorization',
+  credentials: true,
+};
+server.use(cors(corsOptions));
 server.use(express.json());
 
 server.use(
