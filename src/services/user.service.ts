@@ -46,6 +46,20 @@ export const getUser = async (email: string): Promise<User | null> => {
   return user;
 };
 
+export const getUserById = async (id: string): Promise<UserSession | null> => {
+  const user = await db.user.findUnique({
+    where: {
+      id,
+    },
+  });
+
+  if (!user) {
+    throw new Error(ERROR_MESSAGE.NOT_FOUND);
+  }
+
+  return mapUserToSession(user);
+};
+
 export const loginUser = async (
   email: string,
   password: string,

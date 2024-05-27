@@ -41,6 +41,22 @@ export const getUser = async (req: Request, res: Response): Promise<void> => {
   res.send(user);
 };
 
+export const getUserById = async (
+  req: Request,
+  res: Response,
+): Promise<void> => {
+  try {
+    const { id } = req.params;
+    const user = await userService.getUserById(id);
+    res.send(user);
+  } catch (e: unknown) {
+    const error = e as Error;
+    if (error.message === ERROR_MESSAGE.NOT_FOUND) {
+      res.status(CODE_STATUSES.NOT_FOUND).send(ERROR_MESSAGE.NOT_FOUND);
+    }
+  }
+};
+
 export const loginUser = async (req: Request, res: Response): Promise<void> => {
   try {
     const result = LoginSchema.safeParse(req.body);
