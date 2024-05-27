@@ -59,9 +59,12 @@ export const getByCategory = async (
   totalPages: number;
   min: number;
   max: number;
+  totalProducts: number;
 }> => {
   const orderBy =
-    sortBy && SORT_BY.includes(sortBy) ? { [sortBy]: 'asc' } : undefined;
+    sortBy && SORT_BY.includes(sortBy)
+      ? { [sortBy]: sortBy === 'year' ? 'desc' : 'asc' }
+      : undefined;
 
   const take = PER_PAGE.includes(perPage) ? Number(perPage) : 16;
 
@@ -86,6 +89,16 @@ export const getByCategory = async (
     take,
   });
 
+  const totalProducts = await db.product.count({
+    where: {
+      category,
+      price: {
+        gte: minPrice,
+        lte: maxPrice,
+      },
+    },
+  });
+
   const totalCount = await getTotalCountByCategory(
     category,
     minPrice,
@@ -94,7 +107,7 @@ export const getByCategory = async (
 
   const totalPages = Math.ceil(totalCount / take);
 
-  return { products, totalPages, min, max };
+  return { products, totalPages, min, max, totalProducts };
 };
 
 export const getNewestProducts = async (): Promise<Product[]> => {
