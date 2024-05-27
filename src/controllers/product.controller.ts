@@ -32,11 +32,13 @@ export const getByCategory = async (
     totalPages,
     min,
     max,
+    totalProducts,
   }: {
     products: Product[];
     totalPages: number;
     min: number;
     max: number;
+    totalProducts: number;
   } = await productService.getByCategory(
     category,
     sort,
@@ -45,7 +47,7 @@ export const getByCategory = async (
     range as string,
   );
 
-  res.send({ products, totalPages, min, max });
+  res.send({ products, totalPages, min, max, totalProducts });
 };
 
 export const getNewestProducts = async (
