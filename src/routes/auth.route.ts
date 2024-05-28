@@ -34,9 +34,9 @@ router.get('/api/auth/callback/google', (req, res, next) => {
     if (!user) {
       return res.redirect('/login');
     }
-    req.logIn(user, (err) => {
-      if (err) {
-        return next(err);
+    req.logIn(user, (error) => {
+      if (error) {
+        return next(error);
       }
       const userId = user.id;
       res.redirect(

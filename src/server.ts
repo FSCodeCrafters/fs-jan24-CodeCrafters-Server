@@ -4,6 +4,7 @@ import express from 'express';
 import session from 'express-session';
 import cors from 'cors';
 import { router as productRouter } from './routes/product.route';
+import { router as favoritesRouter } from './routes/favorites.route';
 import { router as productItem } from './routes/productItem.route';
 import { router as authRouter } from './routes/auth.route';
 import passport from 'passport';
@@ -47,6 +48,7 @@ server.use(passport.initialize());
 server.use(passport.session());
 
 server.use('/products', express.json(), productRouter);
+server.use('/favorites', express.json(), favoritesRouter);
 server.use('/productItem', express.json(), productItem);
 server.use('/', express.json(), authRouter);
 

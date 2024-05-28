@@ -28,10 +28,6 @@ passport.use(
               data: {
                 email,
                 name: profile.displayName || null,
-                image:
-                  profile.photos && profile.photos.length > 0
-                    ? profile.photos[0].value
-                    : null,
               },
             });
             return done(null, newUser);
