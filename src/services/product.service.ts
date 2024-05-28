@@ -163,3 +163,19 @@ export const getRecommended = async (itemId: string): Promise<Product[]> => {
     take: 20,
   });
 };
+
+export const getCountOfProducts = async () => {
+  const phonesCount = await db.product.count({
+    where: { category: 'phones' },
+  });
+
+  const tabletsCount = await db.product.count({
+    where: { category: 'tablets' },
+  });
+
+  const accessoriesCount = await db.product.count({
+    where: { category: 'accessories' },
+  });
+
+  return { phonesCount, tabletsCount, accessoriesCount };
+};
