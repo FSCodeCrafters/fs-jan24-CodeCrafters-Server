@@ -16,6 +16,8 @@ const allowedList = [
   'https://fs-jan24-codecrafters.github.io',
 ];
 
+// testing deploy
+
 const corsOptions = {
   origin: function (
     origin: string | undefined,
