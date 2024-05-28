@@ -9,6 +9,7 @@ router.get('/', catchError(productController.getAll));
 router.get('/search', catchError(productController.searchProductsByTitle));
 router.get('/new', catchError(productController.getNewestProducts));
 router.get('/discount', catchError(productController.getTopDiscountProducts));
+router.get('/counts', catchError(productController.getProductCounts));
 router.get(
   '/:route',
   determineRoute('category'),

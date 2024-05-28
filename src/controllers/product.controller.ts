@@ -100,3 +100,12 @@ export const getRecommended = async (
     }
   }
 };
+
+export const getProductCounts = async (
+  _req: Request,
+  res: Response,
+): Promise<void> => {
+  const counts = await productService.getCountOfProducts();
+
+  res.send(counts);
+};
