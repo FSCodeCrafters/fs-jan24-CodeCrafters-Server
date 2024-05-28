@@ -20,3 +20,8 @@ router.get(
   determineRoute('itemId'),
   catchError(productController.getRecommended),
 );
+router.get(
+  '/:route/itemId',
+  determineRoute('itemId'),
+  catchError(productController.getByItemId),
+);

@@ -179,3 +179,11 @@ export const getCountOfProducts = async () => {
 
   return { phonesCount, tabletsCount, accessoriesCount };
 };
+
+export const getByItemId = async (itemId: string): Promise<Product | null> => {
+  return await db.product.findFirst({
+    where: {
+      itemId,
+    },
+  });
+};
