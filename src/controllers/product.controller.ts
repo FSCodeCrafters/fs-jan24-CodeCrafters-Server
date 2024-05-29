@@ -109,3 +109,19 @@ export const getProductCounts = async (
 
   res.send(counts);
 };
+
+export const getByItemId = async (
+  req: Request,
+  res: Response,
+): Promise<void> => {
+  const { route: id } = req.params;
+  const product = await productService.getByItemId(id);
+
+  if (!product) {
+    res.status(CODE_STATUSES.NOT_FOUND).send(ERROR_MESSAGE.NOT_FOUND);
+
+    return;
+  }
+
+  res.send(product);
+};
